@@ -8,14 +8,18 @@ body {
 }
 
 nav {
+	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 90px;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 header {
-	text-align: center;
+	margin-top: 70px;
 	background-image: url("header-background.jpg");
 	background-color: #a98aff;
 	background-size: cover;
@@ -41,6 +45,38 @@ section {
 	text-align: left;
 }
 
+h2 {
+	margin: 25px;
+	font-weight: normal;
+}
+
 .links {
-	align-items: center;
+	margin: 25px;
+}
+
+.header-text {
+	float: right;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(116, 111, 114, 0.65);
+	color: #ffffff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 6rem;
+	padding: 25px;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
 }
