@@ -1,3 +1,35 @@
 * {
 	box-sizing: border-box;
 }
+
+body {
+	margin: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+header {
+	text-align: center;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+section {
+	width: 75%;
+	text-align: center;
+}
+
+.contact {
+	text-align: left;
+}
