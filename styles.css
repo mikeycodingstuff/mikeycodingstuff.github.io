@@ -52,7 +52,7 @@ h2 {
 }
 
 h2 a {
-	color: #2e065e;
+	color: #50129b;
 	white-space: nowrap;
 }
 
@@ -71,6 +71,7 @@ h2 a {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 }
 
 h1 {
@@ -90,6 +91,10 @@ a {
 	margin: 60px;
 }
 
+a:hover {
+	color: #c99feb;
+}
+
 @media screen and (max-width: 1000px) {
 	h2 {
 		display: none;
@@ -97,5 +102,31 @@ a {
 	
 	nav {
 		justify-content: center;
+	}
+	
+	.header-text {
+		float: none;
+		width: 100%;
+		height: 60%;
+	}
+	h1 {
+		font-weight: normal;
+		font-size: 5rem;
+		padding: 25px;
+	}
+
+	h3 {
+		font-weight: normal;
+		font-size: 1.5rem;
+	}
+	
+	header {
+		display: flex;
+		align-items: center;
+	}
+	
+	.links {
+		width: 100%;
+		margin: 5px;
 	}
 }
