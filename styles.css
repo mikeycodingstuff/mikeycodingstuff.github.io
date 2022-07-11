@@ -91,5 +91,11 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
-	 
+	h2 {
+		display: none;
+	}
+	
+	nav {
+		justify-content: center;
+	}
 }
