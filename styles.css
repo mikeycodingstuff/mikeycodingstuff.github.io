@@ -31,7 +31,7 @@ main {
 	justify-content: center;
 }
 
-footer {
+.contact-container {
 	display: flex;
 	justify-content: center;
 }
@@ -53,11 +53,13 @@ h2 {
 
 h2 a {
 	color: #2e065e;
+	white-space: nowrap;
 }
 
 .links {
-	margin: 25px;
+	margin: 15px;
 	font-size: 1.5rem;
+	white-space: nowrap;
 }
 
 .header-text {
@@ -86,4 +88,8 @@ a {
 	text-decoration: none;
 	color: #000000;
 	margin: 60px;
+}
+
+@media screen and (max-width: 1000px) {
+	 
 }
