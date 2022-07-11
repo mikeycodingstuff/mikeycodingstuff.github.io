@@ -4,17 +4,20 @@
 
 body {
 	margin: 0;
+	font-family: 'Courier New', monospace;
 }
 
 nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+	height: 90px;
 }
 
 header {
 	text-align: center;
 	background-image: url("header-background.jpg");
-	background-color: #5D3FD3;
+	background-color: #a98aff;
 	background-size: cover;
 	height: 700px;
 }
@@ -36,4 +39,8 @@ section {
 
 .contact {
 	text-align: left;
+}
+
+.links {
+	align-items: center;
 }
