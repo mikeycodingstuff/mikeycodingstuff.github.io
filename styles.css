@@ -151,18 +151,29 @@ span:hover {
 
 .project {
 	width: 33.33%;
+	background-color: #dfd1ff;
 }
 
 .project img {
 	width: 100%;
 	height: auto;
+	padding: 10%;
+}
+
+.project p {
+	text-align: center;
+	padding: 2%;
+}
+.project-links {
+	display: flex;
+	justify-content: space-around;
 }
 
 h5 {
 	text-align: center;
 	font-size: 2em;
 	font-weight: normal;
-	margin: 1%;
+	margin: 5%;
 }
 
 footer div {
