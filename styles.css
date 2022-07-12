@@ -253,6 +253,10 @@ hr {
 		padding-top: 5%;
 		padding-right: 5%;
 	}
+	
+	.project {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 400px) {
