@@ -104,6 +104,19 @@ span:hover {
 	color: #50129b;
 }
 
+footer div {
+	margin: 5px;
+	color: #50129b;
+}
+
+hr {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-style: none;
+	height: 1px;
+	background-color: rgba(116, 111, 114, 0.65);
+}
+
 @media screen and (max-width: 1000px) {
 	
 	h2 {
