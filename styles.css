@@ -29,7 +29,7 @@ header {
 main {
 	display: flex;
 	justify-content: center;
-	background-color: #dfd1ff;
+	/*background-color: #dfd1ff;*/
 }
 
 .about {
@@ -37,11 +37,10 @@ main {
 }
 
 .about div {
-	width: 50%;
+	width: 100%;
 	display: flex;
-	align-items: center;
+	align-items: left;
 	flex-wrap: wrap;
-	justify-content: flex-start;
 }
 
 .about img {
@@ -53,6 +52,7 @@ main {
 h4 {
 	font-weight: normal;
 	font-size: 3rem;
+	text-decoration: underline;
 }
 
 .contact-container {
@@ -63,7 +63,7 @@ h4 {
 section {
 	padding-left: 12.5%;
 	padding-right: 12.5%;
-	text-align: center;
+	text-align: left;
 }
 
 .contact {
