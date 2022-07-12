@@ -153,6 +153,18 @@ span:hover {
 	width: 33.33%;
 }
 
+.project img {
+	width: 100%;
+	height: auto;
+}
+
+h5 {
+	text-align: center;
+	font-size: 2em;
+	font-weight: normal;
+	margin: 1%;
+}
+
 footer div {
 	margin: 5px;
 	color: #50129b;
