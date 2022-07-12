@@ -31,14 +31,51 @@ main {
 	justify-content: center;
 }
 
+.about {
+	display: flex;
+}
+
+.about div {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.img-div {
+	justify-content: center;
+}
+
+.about img {
+	width: 100%;
+	height: auto;
+	padding: 20%;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 3rem;
+	text-decoration: underline;
+	margin: 0;
+	padding-top: 20%;
+	padding-right: 20%;
+	padding-left: 5%;
+}
+
+p {
+	padding: 5%;
+	background-color: #dfd1ff;
+}
+
 .contact-container {
 	display: flex;
 	justify-content: center;
 }
 
 section {
-	width: 75%;
-	text-align: center;
+	padding-left: 12.5%;
+	padding-right: 12.5%;
+	text-align: left;
 }
 
 .contact {
@@ -117,7 +154,24 @@ hr {
 	background-color: rgba(116, 111, 114, 0.65);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
+	
+	.about img {
+		padding: 10%;
+		padding-top: 20%;
+	}
+	
+	section {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	.about {
+		flex-direction: column-reverse;
+	}
 	
 	h2 {
 		display: none;
@@ -143,7 +197,6 @@ hr {
 		padding: 5%;
 	}
 	
-	
 	header {
 		display: flex;
 		align-items: center;
@@ -156,17 +209,40 @@ hr {
 	a {
 		margin: 5%;
 	}
+	
+	.about img {
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+	
+	.about div {
+		width: 100%;
+	}
+	
+	section {
+		width: 100%;
+		padding: 0;
+	}
+	
+	h4 {
+		font-weight: normal;
+		font-size: 3rem;
+		text-decoration: underline;
+		margin: 0;
+		padding-top: 5%;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
 }
 
 @media screen and (max-width: 400px) {
-	
 	.links {
 		font-size: 1.3rem;
 	}
 }
 
 @media screen and (max-width: 340px) {
-	
 	.header-text {
 		height: 65%;
 	}
