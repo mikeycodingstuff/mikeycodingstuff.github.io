@@ -169,6 +169,7 @@ span:hover {
 .project-links {
 	display: flex;
 	justify-content: space-around;
+	padding: 5%;
 }
 
 h5 {
