@@ -38,6 +38,10 @@ main {
 
 #about div {
 	width: 50%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 #about img {
@@ -57,7 +61,8 @@ h4 {
 }
 
 section {
-	width: 75%;
+	padding-left: 12.5%;
+	padding-right: 12.5%;
 	text-align: center;
 }
 
@@ -139,6 +144,10 @@ hr {
 
 @media screen and (max-width: 1000px) {
 	
+	#about {
+		flex-direction: column-reverse;
+	}
+	
 	h2 {
 		display: none;
 	}
@@ -163,7 +172,6 @@ hr {
 		padding: 5%;
 	}
 	
-	
 	header {
 		display: flex;
 		align-items: center;
@@ -176,6 +184,22 @@ hr {
 	a {
 		margin: 5%;
 	}
+	
+	#about img {
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+	
+	#about div {
+		width: 100%;
+	}
+	
+	
+	section {
+		width: 100%;
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -183,6 +207,7 @@ hr {
 	.links {
 		font-size: 1.3rem;
 	}
+	
 }
 
 @media screen and (max-width: 340px) {
@@ -194,4 +219,5 @@ hr {
 	.links {
 		font-size: 1rem;
 	}
+	
 }
