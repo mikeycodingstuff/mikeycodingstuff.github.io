@@ -42,6 +42,10 @@ main {
 	flex-direction: column;
 }
 
+.img-div {
+	justify-content: center;
+}
+
 .about img {
 	width: 100%;
 	height: auto;
@@ -150,7 +154,20 @@ hr {
 	background-color: rgba(116, 111, 114, 0.65);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1600px) {
+	
+	.about img {
+		padding: 10%;
+		padding-top: 20%;
+	}
+	
+	section {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 900px) {
 	
 	.about {
 		flex-direction: column-reverse;
