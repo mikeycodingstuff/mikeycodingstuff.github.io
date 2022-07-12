@@ -144,7 +144,7 @@ hr {
 
 @media screen and (max-width: 1000px) {
 	
-	#about {
+	.about {
 		flex-direction: column-reverse;
 	}
 	
@@ -194,7 +194,6 @@ hr {
 	.about div {
 		width: 100%;
 	}
-	
 	
 	section {
 		width: 100%;
