@@ -32,19 +32,19 @@ main {
 	background-color: #dfd1ff;
 }
 
-#about {
+.about {
 	display: flex;
 }
 
-#about div {
+.about div {
 	width: 50%;
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
-#about img {
+.about img {
 	width: 100%;
 	height: auto;
 	padding: 20%;
@@ -185,13 +185,13 @@ hr {
 		margin: 5%;
 	}
 	
-	#about img {
+	.about img {
 		width: 100%;
 		height: auto;
 		padding: 0;
 	}
 	
-	#about div {
+	.about div {
 		width: 100%;
 	}
 	
