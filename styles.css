@@ -29,7 +29,6 @@ header {
 main {
 	display: flex;
 	justify-content: center;
-	/*background-color: #dfd1ff;*/
 }
 
 .about {
@@ -61,6 +60,7 @@ h4 {
 
 p {
 	padding: 5%;
+	background-color: #dfd1ff;
 }
 
 .contact-container {
@@ -206,6 +206,16 @@ hr {
 	section {
 		width: 100%;
 		padding: 0;
+	}
+	
+	h4 {
+		font-weight: normal;
+		font-size: 3rem;
+		text-decoration: underline;
+		margin: 0;
+		padding-top: 5%;
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 }
 
