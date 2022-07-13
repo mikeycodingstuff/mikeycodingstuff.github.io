@@ -61,6 +61,7 @@ main {
 	padding-top: 20%;
 	padding-right: 20%;
 	padding-left: 5%;
+	padding-bottom: 1%;
 }
 
 h4 {
@@ -147,7 +148,7 @@ a {
 }
 
 .project a:hover {
-	color: #ffffff;
+	color: #c1cac4;
 }
 
 span:hover {
@@ -179,6 +180,8 @@ span:hover {
 .project p {
 	text-align: justify;
 	background-color: #daffe7;
+	padding-bottom: 0;
+	padding-top: 0;
 }
 .project-links {
 	display: flex;
@@ -189,7 +192,7 @@ span:hover {
 }
 
 .project a {
-	padding: 5%;
+	padding: 4%;
 	margin: 0;
 }
 
@@ -233,6 +236,16 @@ hr {
 		width: 46%;
 		background-color: #daffe7;
 		margin: 2%;
+	}
+	
+	.project img {
+		width: 100%;
+		height: auto;
+		padding: 5%;
+	}
+	
+	h5 {
+		margin: 1.5%;
 	}
 }
 
