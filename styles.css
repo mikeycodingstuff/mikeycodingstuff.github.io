@@ -30,11 +30,6 @@ header {
 	height: 700px;
 }
 
-main {
-	display: flex;
-	justify-content: center;
-}
-
 .about {
 	display: flex;
 }
