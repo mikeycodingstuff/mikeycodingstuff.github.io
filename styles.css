@@ -56,7 +56,7 @@ main {
 	padding: 20%;
 }
 
-.about-heading {
+.about-heading, .contact-heading {
 	margin: 0;
 	padding-top: 20%;
 	padding-right: 20%;
@@ -206,10 +206,24 @@ h5 {
 
 .contact-text {
 	background-color: transparent;
+	padding: 1%;
 }
 
 .contact div {
 	background-color: #dfd1ff;
+}
+
+.contact-links {
+	display: flex;
+}
+
+.contact-links a {
+	margin: 0;
+	padding: 1%;
+}
+
+.contact-links div{
+	display: flex;
 }
 
 footer div {
@@ -315,9 +329,13 @@ hr {
 		padding: 0;
 	}
 	
-	.about-heading {
+	.about-heading, .contact-heading {
 		padding-top: 5%;
 		padding-right: 5%;
+	}
+	
+	.portfolio-heading {
+		padding-top: 5%;
 	}
 	
 	.project {
