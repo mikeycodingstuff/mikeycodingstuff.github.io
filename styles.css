@@ -145,6 +145,10 @@ span:hover {
 	color: #50129b;
 }
 
+.portfolio-heading {
+	text-align: center;
+}
+
 .all-projects {
 	display: flex;
 	flex-wrap: wrap;
@@ -152,8 +156,12 @@ span:hover {
 
 .project {
 	width: 27.33%;
-	background-color: #dfd1ff;
+	background-color: #facd9d;
 	margin: 3%;
+}
+
+.project p {
+	background-color: #facd9d;
 }
 
 .project img {
