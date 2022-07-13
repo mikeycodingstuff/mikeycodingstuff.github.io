@@ -56,12 +56,19 @@ main {
 	padding: 20%;
 }
 
-.about-heading, .contact-heading {
+.about-heading {
 	margin: 0;
 	padding-top: 20%;
 	padding-right: 20%;
 	padding-left: 5%;
 	padding-bottom: 1%;
+}
+
+.contact-heading {
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 2.5%;
+	padding-bottom: 0.5%;
 }
 
 h4 {
@@ -210,7 +217,7 @@ h5 {
 }
 
 .contact div {
-	background-color: #dfd1ff;
+	background-color: #d1f1ff;
 }
 
 .contact-links {
@@ -222,21 +229,25 @@ h5 {
 	padding: 1%;
 }
 
+.contact-links img {
+	width: 40px;
+	height: 40px;
+}
+
 .contact-links div{
 	display: flex;
+	align-items: center;
+}
+
+.contact-links p {
+	text-align: center;
+	background-color: #d1f1ff;
 }
 
 footer div {
-	margin: 5px;
+	margin: 1%;
+	margin-top: ;
 	color: #50129b;
-}
-
-hr {
-	margin-left: 5px;
-	margin-right: 5px;
-	border-style: none;
-	height: 1px;
-	background-color: rgba(116, 111, 114, 0.65);
 }
 
 @media screen and (max-width: 1600px) {
