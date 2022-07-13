@@ -69,6 +69,7 @@ h4 {
 p {
 	padding: 5%;
 	background-color: #dfd1ff;
+	font-size: 1.2rem;
 }
 
 .contact-container {
@@ -136,8 +137,12 @@ a {
 	margin-right: 60px;
 }
 
-a:hover {
+.links a:hover, h2 a:hover {
 	color: #c99feb;
+}
+
+.project a:hover {
+	color: #ffffff;
 }
 
 span:hover {
@@ -160,10 +165,6 @@ span:hover {
 	margin: 3%;
 }
 
-.project p {
-	background-color: #facd9d;
-}
-
 .project img {
 	width: 100%;
 	height: auto;
@@ -171,13 +172,23 @@ span:hover {
 }
 
 .project p {
-	text-align: center;
-	padding: 2%;
+	text-align: justify;
+	background-color: #facd9d;
+	padding: 5%;
 }
 .project-links {
 	display: flex;
 	justify-content: space-around;
-	padding: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	text-decoration: underline;
+	font-size: 1.5rem;
+	width: 100%;
+}
+
+.project a {
+	padding: 2%;
+	margin: 0;
 }
 
 h5 {
@@ -211,6 +222,15 @@ hr {
 	section {
 		padding-left: 5%;
 		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	
+	.project {
+		width: 46%;
+		background-color: #facd9d;
+		margin: 2%;
 	}
 }
 
@@ -279,16 +299,19 @@ hr {
 	
 	.project {
 		width: 100%;
+		margin: 0;
 	}
 }
 
 @media screen and (max-width: 400px) {
+	
 	.links {
 		font-size: 1.3rem;
 	}
 }
 
 @media screen and (max-width: 340px) {
+	
 	.header-text {
 		height: 65%;
 	}
