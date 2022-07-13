@@ -204,6 +204,14 @@ h5 {
 	text-decoration: underline;
 }
 
+.contact-text {
+	background-color: transparent;
+}
+
+.contact div {
+	background-color: #dfd1ff;
+}
+
 footer div {
 	margin: 5px;
 	color: #50129b;
