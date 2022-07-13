@@ -64,6 +64,13 @@ main {
 	padding-bottom: 1%;
 }
 
+.contact-heading {
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 2.5%;
+	padding-bottom: 0.5%;
+}
+
 h4 {
 	font-weight: normal;
 	font-size: 4rem;
@@ -204,17 +211,42 @@ h5 {
 	text-decoration: underline;
 }
 
-footer div {
-	margin: 5px;
-	color: #50129b;
+.contact-text {
+	background-color: transparent;
+	padding: 1%;
 }
 
-hr {
-	margin-left: 5px;
-	margin-right: 5px;
-	border-style: none;
-	height: 1px;
-	background-color: rgba(116, 111, 114, 0.65);
+.contact div {
+	background-color: #d1f1ff;
+}
+
+.contact-links {
+	display: flex;
+}
+
+.contact-links a {
+	margin: 0;
+	padding: 1%;
+}
+
+.contact-links img {
+	width: 40px;
+	height: 40px;
+}
+
+.contact-links div{
+	display: flex;
+	align-items: center;
+}
+
+.contact-links p {
+	text-align: center;
+	background-color: #d1f1ff;
+}
+
+footer div {
+	margin: 1%;
+	color: #50129b;
 }
 
 @media screen and (max-width: 1600px) {
@@ -307,9 +339,13 @@ hr {
 		padding: 0;
 	}
 	
-	.about-heading {
+	.about-heading, .contact-heading {
 		padding-top: 5%;
 		padding-right: 5%;
+	}
+	
+	.portfolio-heading {
+		padding-top: 5%;
 	}
 	
 	.project {
