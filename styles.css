@@ -68,14 +68,14 @@ h4 {
 	margin: 0;
 }
 
-p {
+.about-text {
 	padding: 5%;
-	font-size: 1.2rem;
 	margin: 0;
+	background-color: #dfd1ff;
 }
 
 .about p {
-	background-color: #dfd1ff;
+	font-size: 1.2rem;
 }
 
 section {
