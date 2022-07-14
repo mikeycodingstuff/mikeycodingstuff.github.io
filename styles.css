@@ -1,0 +1,373 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Courier New', monospace;
+}
+
+nav {
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+#about-marker, #portfolio-marker, #contact-marker {
+	scroll-margin-top: 69px;
+}
+
+header {
+	margin-top: 70px;
+	background-image: url("header-background.jpg");
+	background-color: #a98aff;
+	background-size: cover;
+	height: 700px;
+}
+
+.about {
+	display: flex;
+}
+
+.about div {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+}
+
+.img-div {
+	justify-content: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	padding-left: 10%;
+}
+
+.about img {
+	width: 100%;
+	height: auto;
+}
+
+.about-heading {
+	margin: 0;
+	padding-top: 20%;
+	padding-right: 20%;
+	padding-left: 5%;
+	padding-bottom: 1%;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 4rem;
+	text-decoration: underline;
+	margin: 0;
+}
+
+.about-text {
+	padding: 5%;
+	margin: 0;
+	background-color: #dfd1ff;
+}
+
+.about p {
+	font-size: 1.2rem;
+}
+
+section {
+	padding-left: 12.5%;
+	padding-right: 12.5%;
+}
+
+h2 {
+	font-weight: normal;
+	font-size: 2rem;
+}
+
+h2 a {
+	color: #50129b;
+	white-space: nowrap;
+}
+
+.links {
+	margin: 15px;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.header-text {
+	float: right;
+	width: 50%;
+	height: 100%;
+	background-color: rgba(116, 111, 114, 0.65);
+	color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	font-family: Roboto, sans-serif;
+	font-weight: normal;
+	font-size: 6rem;
+	margin: 2%;
+	margin-left: 20%;
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 1.5rem;
+	padding-left: 20%;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.links a:hover, h2 a:hover {
+	color: #c99feb;
+}
+
+.project a:hover {
+	color: #c1cac4;
+}
+
+.header-text span:hover {
+	background-color: rgba(250, 250, 250, 0.65);
+	color: #50129b;
+}
+
+.portfolio-heading {
+	text-align: center;
+}
+
+.all-projects {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.project {
+	width: 27.33%;
+	background-color: #daffe7;
+	margin: 3%;
+}
+
+.project img {
+	width: 100%;
+	height: auto;
+	padding: 10%;
+}
+
+.project p {
+	text-align: justify;
+	background-color: #daffe7;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.project-links {
+	display: flex;
+	justify-content: space-around;
+	text-decoration: underline;
+	font-size: 1.5rem;
+}
+
+.project a {
+	padding: 4%;
+	margin: 0;
+}
+
+h5 {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: normal;
+	margin: 3.5%;
+	text-decoration: underline;
+}
+
+.contact-heading {
+	margin: 0;
+	padding-top: 5%;
+	padding-left: 2.5%;
+	padding-bottom: 0.5%;
+}
+
+.contact-text {
+	background-color: transparent;
+	padding: 1%;
+}
+
+.contact div {
+	background-color: #d1f1ff;
+}
+
+.contact-links {
+	display: flex;
+}
+
+.contact-links a {
+	margin: 0;
+	padding: 1%;
+}
+
+.contact-links img {
+	width: 40px;
+	height: 40px;
+}
+
+.contact-links div{
+	display: flex;
+	align-items: center;
+}
+
+.contact-links p {
+	text-align: center;
+	background-color: #d1f1ff;
+}
+
+footer div {
+	margin: 1%;
+	color: #50129b;
+}
+
+@media screen and (max-width: 1600px) {
+	
+	section {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	
+	a {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+	
+	.project {
+		width: 46%;
+		background-color: #daffe7;
+		margin: 2%;
+	}
+	
+	.project img {
+		width: 100%;
+		height: auto;
+		padding: 5%;
+	}
+	
+	h5 {
+		margin: 1.5%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	
+	.about {
+		flex-direction: column-reverse;
+	}
+	
+	.img-div {
+		padding: 0;
+	}
+	
+	h2 {
+		display: none;
+	}
+	
+	.header-text {
+		float: none;
+		width: 100%;
+		height: 55%;
+	}
+	
+	h1 {
+		font-weight: normal;
+		font-size: 5rem;
+		text-align: center;
+		margin: 0;
+	}
+
+	h3 {
+		font-weight: normal;
+		font-size: 1.5rem;
+		text-align: center;
+		padding: 5%;
+	}
+	
+	header {
+		display: flex;
+		align-items: center;
+	}
+	
+	nav {
+		justify-content:center;
+	}
+	
+	a {
+		margin: 5%;
+	}
+	
+	.about img {
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}
+	
+	.about div {
+		width: 100%;
+	}
+	
+	section {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.about-heading, .contact-heading {
+		padding-top: 5%;
+		padding-right: 5%;
+	}
+	
+	.portfolio-heading {
+		padding-top: 5%;
+	}
+	
+	.project {
+		width: 90%;
+		margin: 5%;
+	}
+	
+	.project a, .project p {
+		padding: 2%;
+	}
+	
+	.project img {
+		padding: 5%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	
+	.links {
+		font-size: 1.3rem;
+	}
+}
+
+@media screen and (max-width: 340px) {
+	
+	.header-text {
+		height: 65%;
+	}
+	
+	.links {
+		font-size: 1rem;
+	}
+}
