@@ -16,6 +16,7 @@ nav {
 	position: fixed;
 	top: 0;
 	width: 100%;
+	box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
 }
 
 #about-marker, #portfolio-marker, #contact-marker {
