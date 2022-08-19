@@ -165,12 +165,13 @@ a {
 .project img {
 	width: 100%;
 	height: auto;
-	padding: 20px;
+	padding: 15px;
 }
 
 .project p {
 	text-align: justify;
 	background-color: #daffe7;
+	margin: 10px;
 }
 .project-links {
 	display: flex;
