@@ -19,7 +19,7 @@ nav {
 	box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
 }
 
-#about-marker, #portfolio-marker, #contact-marker {
+#about, #portfolio, #contact {
 	scroll-margin-top: 69px;
 }
 
