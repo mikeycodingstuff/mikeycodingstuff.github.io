@@ -360,10 +360,3 @@ footer div {
 		padding: 5%;
 	}
 }
-
-@media screen and (max-width: 400px) {
-	
-	.links {
-		font-size: 1.3rem;
-	}
-}
