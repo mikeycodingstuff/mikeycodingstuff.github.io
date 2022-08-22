@@ -131,6 +131,7 @@ a {
 	color: #000000;
 	margin-left: 60px;
 	margin-right: 60px;
+	transition: color 0.25s;
 }
 
 .links a:hover, h2 a:hover {
