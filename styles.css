@@ -141,6 +141,10 @@ a {
 	color: #c1cac4;
 }
 
+.header-text span {
+	transition: background-color 0.5s, color 0.5s;
+}
+
 .header-text span:hover {
 	background-color: rgba(250, 250, 250, 0.65);
 	color: #50129b;
