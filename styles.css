@@ -367,14 +367,3 @@ footer div {
 		font-size: 1.3rem;
 	}
 }
-
-@media screen and (max-width: 340px) {
-	
-	.header-text {
-		height: 65%;
-	}
-	
-	.links {
-		font-size: 1rem;
-	}
-}
