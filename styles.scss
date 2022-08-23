@@ -1,6 +1,7 @@
 //variables
 $bg-colour: #ffffff;
 $nav-hover-colour: #c99feb;
+$pop-colour: #50129b;
 
 * {
 	box-sizing: border-box;
@@ -37,13 +38,22 @@ header {
 
 .about {
 	display: flex;
-}
 
-.about div {
-	width: 100%;
-	display: flex;
-	align-items: flex-start;
-	flex-direction: column;
+	div {
+		width: 100%;
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	img {
+		width: 100%;
+		height: auto;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
 }
 
 .img-div {
@@ -51,11 +61,6 @@ header {
 	padding-top: 10%;
 	padding-bottom: 10%;
 	padding-left: 10%;
-}
-
-.about img {
-	width: 100%;
-	height: auto;
 }
 
 .about-heading {
@@ -79,10 +84,6 @@ h4 {
 	background-color: #dfd1ff;
 }
 
-.about p {
-	font-size: 1.2rem;
-}
-
 section {
 	padding-left: 12.5%;
 	padding-right: 12.5%;
@@ -92,7 +93,7 @@ h2 {
 	font-weight: normal;
 	font-size: 2rem;
 	a {
-		color: #50129b;
+		color: $pop-colour;
 		white-space: nowrap;
 	}
 }
@@ -151,7 +152,7 @@ a {
 
 .header-text span:hover {
 	background-color: rgba(250, 250, 250, 0.65);
-	color: #50129b;
+	color: $pop-colour;
 }
 
 .portfolio-heading {
@@ -244,7 +245,7 @@ h5 {
 
 footer div {
 	margin: 1%;
-	color: #50129b;
+	color: $pop-colour;
 }
 
 @media screen and (max-width: 1600px) {
