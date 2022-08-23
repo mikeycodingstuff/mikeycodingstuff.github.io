@@ -6,7 +6,7 @@ $contact-bg-colour: rgba(255, 255, 255, 0.6);
 $about-bg-colour: rgba(255, 255, 255, 0.6);
 $project-bg-colour: rgba(255, 255, 255, 0.6);
 $header-backup-bg: #cfbeff;
-$project-links-hover: #c1cac4;
+$links-hover: #50129b;
 
 * {
 	box-sizing: border-box;
@@ -131,7 +131,7 @@ h5 {
 }
 
 p {
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 }
 
 .about {
@@ -198,7 +198,7 @@ p {
 	}
 
 	a:hover {
-		color: $project-links-hover;
+		color: $links-hover;
 	}
 
 	.project-links {
@@ -228,6 +228,10 @@ p {
 		a {
 			margin: 0;
 			padding: 1%;
+		}
+
+		a:hover {
+			color: $links-hover;
 		}
 	
 		img {
