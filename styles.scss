@@ -1,3 +1,6 @@
+//variables
+$bg-colour: #ffffff;
+
 * {
 	box-sizing: border-box;
 }
@@ -8,7 +11,7 @@ body {
 }
 
 nav {
-	background-color: #ffffff;
+	background-color: $bg-colour;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -87,11 +90,10 @@ section {
 h2 {
 	font-weight: normal;
 	font-size: 2rem;
-}
-
-h2 a {
-	color: #50129b;
-	white-space: nowrap;
+	a {
+		color: #50129b;
+		white-space: nowrap;
+	}
 }
 
 .links {
