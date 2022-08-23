@@ -8,6 +8,12 @@ $project-bg-colour: rgba(255, 255, 255, 0.6);
 $header-backup-bg: #cfbeff;
 $links-hover: #50129b;
 
+//mixin
+@mixin headingStyles($mLeft, $mBot) {
+	margin-left: $mLeft;
+	margin-bottom: $mBot;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -80,11 +86,6 @@ header {
 		background-color: rgba(250, 250, 250, 0.65);
 		color: $pop-colour;
 	}
-}
-
-@mixin headingStyles($mLeft, $mBot) {
-	margin-left: $mLeft;
-	margin-bottom: $mBot;
 }
 
 section {
