@@ -5,7 +5,7 @@ $pop-colour: #50129b;
 $contact-bg-colour: #d1f1ff;
 $about-bg-colour: #dfd1ff;
 $project-bg-colour: #daffe7;
-$header-backup-bg: #a98aff;
+$header-backup-bg: #cfbeff;
 $project-links-hover: #c1cac4;
 
 * {
@@ -15,6 +15,8 @@ $project-links-hover: #c1cac4;
 body {
 	margin: 0;
 	font-family: 'Courier New', monospace;
+	background: #cfbeff;
+	background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);	
 }
 
 nav {
@@ -30,7 +32,7 @@ nav {
 
 	.links {
 		margin: 15px;
-		font-size: 1.5rem;
+		font-size: 1.7rem;
 		display: flex;
 		justify-content: center;
 	}
@@ -104,7 +106,7 @@ h2 {
 
 h3 {
 	font-weight: normal;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	padding-left: 20%;
 }
 
@@ -123,6 +125,10 @@ h5 {
 	margin: 0;
 }
 
+p {
+	font-size: 1.4rem;
+}
+
 .about {
 	display: flex;
 	margin-top: 80px;
@@ -137,10 +143,6 @@ h5 {
 	img {
 		width: 100%;
 		height: auto;
-	}
-
-	p {
-		font-size: 1.2rem;
 	}
 
 	.about-heading {
@@ -164,7 +166,7 @@ h5 {
 	text-align: center;
 }
 
-.all-projects {
+.projects-container {
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -210,42 +212,45 @@ h5 {
 	padding-bottom: 0.5%;
 }
 
-.contact-text {
-	background-color: transparent;
-	padding: 1%;
-}
-
-.contact div {
+.contact-container {
+	margin-bottom: 30px;
 	background-color: $contact-bg-colour;
-}
 
-.contact-links {
-	display: flex;
-
-	a {
-		margin: 0;
+	.contact-text {
+		background-color: transparent;
 		padding: 1%;
 	}
-
-	img {
-		width: 40px;
-		height: 40px;
-		margin: 10px;
-	}
-
-	div{
+	
+	.contact-links {
 		display: flex;
-		align-items: center;
-	}
-
-	p {
-		text-align: center;
-		background-color: $contact-bg-colour;
+	
+		a {
+			margin: 0;
+			padding: 1%;
+		}
+	
+		img {
+			width: 40px;
+			height: 40px;
+			margin: 10px;
+		}
+	
+		div{
+			display: flex;
+			align-items: center;
+		}
+	
+		p {
+			text-align: center;
+			background-color: $contact-bg-colour;
+		}
 	}
 }
+
 
 footer div {
 	color: $pop-colour;
+	background-color: $bg-colour;
 	padding-left: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
