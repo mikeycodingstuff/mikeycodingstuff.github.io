@@ -169,29 +169,30 @@ a {
 	background-color: #daffe7;
 	margin: 3%;
 	padding: 10px;
+
+	img {
+		width: 100%;
+		height: auto;
+		padding: 15px;
+	}
+
+	p {
+		text-align: justify;
+		background-color: #daffe7;
+		margin: 10px;
+	}
+
+	a {
+		padding: 4%;
+		margin: 0;
+	}
 }
 
-.project img {
-	width: 100%;
-	height: auto;
-	padding: 15px;
-}
-
-.project p {
-	text-align: justify;
-	background-color: #daffe7;
-	margin: 10px;
-}
 .project-links {
 	display: flex;
 	justify-content: space-around;
 	text-decoration: underline;
 	font-size: 1.5rem;
-}
-
-.project a {
-	padding: 4%;
-	margin: 0;
 }
 
 h5 {
@@ -220,27 +221,27 @@ h5 {
 
 .contact-links {
 	display: flex;
-}
 
-.contact-links a {
-	margin: 0;
-	padding: 1%;
-}
+	a {
+		margin: 0;
+		padding: 1%;
+	}
 
-.contact-links img {
-	width: 40px;
-	height: 40px;
-	margin: 10px;
-}
+	img {
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+	}
 
-.contact-links div{
-	display: flex;
-	align-items: center;
-}
+	div{
+		display: flex;
+		align-items: center;
+	}
 
-.contact-links p {
-	text-align: center;
-	background-color: #d1f1ff;
+	p {
+		text-align: center;
+		background-color: #d1f1ff;
+	}
 }
 
 footer div {
