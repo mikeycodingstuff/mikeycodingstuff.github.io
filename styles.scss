@@ -1,5 +1,6 @@
 //variables
 $bg-colour: #ffffff;
+$nav-hover-colour: #c99feb;
 
 * {
 	box-sizing: border-box;
@@ -137,7 +138,7 @@ a {
 }
 
 .links a:hover, h2 a:hover {
-	color: #c99feb;
+	color: $nav-hover-colour;
 }
 
 .project a:hover {
