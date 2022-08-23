@@ -2,6 +2,7 @@
 $bg-colour: #ffffff;
 $nav-hover-colour: #c99feb;
 $pop-colour: #50129b;
+$contact-bg-colour: #d1f1ff;
 
 * {
 	box-sizing: border-box;
@@ -216,7 +217,7 @@ h5 {
 }
 
 .contact div {
-	background-color: #d1f1ff;
+	background-color: $contact-bg-colour;
 }
 
 .contact-links {
@@ -240,7 +241,7 @@ h5 {
 
 	p {
 		text-align: center;
-		background-color: #d1f1ff;
+		background-color: $contact-bg-colour;
 	}
 }
 
