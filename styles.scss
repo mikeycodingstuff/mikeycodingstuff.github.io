@@ -69,6 +69,15 @@ header {
 		flex-direction: column;
 		justify-content: center;
 	}
+
+	.header-text span {
+		transition: background-color 0.5s, color 0.5s;
+	}
+
+	.header-text span:hover {
+		background-color: rgba(250, 250, 250, 0.65);
+		color: $pop-colour;
+	}
 }
 
 section {
@@ -116,6 +125,8 @@ h5 {
 
 .about {
 	display: flex;
+	margin-top: 80px;
+	margin-bottom: 80px;
 
 	div {
 		width: 100%;
@@ -133,11 +144,8 @@ h5 {
 	}
 
 	.about-heading {
-		margin: 0;
-		padding-top: 20%;
-		padding-right: 20%;
-		padding-left: 5%;
-		padding-bottom: 1%;
+		margin-left: 30px;
+		margin-bottom: 10px;
 	}
 
 	.about-text {
@@ -148,19 +156,8 @@ h5 {
 
 	.mikey-img-div {
 		justify-content: center;
-		padding-top: 10%;
-		padding-bottom: 10%;
 		padding-left: 10%;
 	}
-}
-
-.header-text span {
-	transition: background-color 0.5s, color 0.5s;
-}
-
-.header-text span:hover {
-	background-color: rgba(250, 250, 250, 0.65);
-	color: $pop-colour;
 }
 
 .portfolio-heading {
@@ -257,8 +254,8 @@ footer div {
 @media screen and (max-width: 1600px) {
 	
 	section {
-		padding-left: 5%;
-		padding-right: 5%;
+		padding-left: 50px;
+		padding-right: 50px;
 	}
 }
 
@@ -303,11 +300,16 @@ footer div {
 	
 	.about {
 		flex-direction: column-reverse;
+		margin-top: 0;
+
+		.about-heading {
+			margin-left: 15px;
+			margin-bottom: 5px;
+		}
 
 		img {
 			width: 100%;
 			height: auto;
-			padding: 0;
 		}
 
 		div {
@@ -315,7 +317,7 @@ footer div {
 		}
 
 		.mikey-img-div {
-			padding: 0;
+			padding: 100px;
 		}
 	}
 
@@ -343,25 +345,12 @@ footer div {
 		padding: 0;
 	}
 	
-	.about-heading, .contact-heading {
-		padding-top: 5%;
-		padding-right: 5%;
-	}
-	
-	.portfolio-heading {
-		padding-top: 5%;
-	}
-	
 	.project {
 		width: 90%;
 		margin: 5%;
 		
 		a, p {
 			padding: 2%;
-		}
-
-		img {
-			padding: 5%;
 		}
 	}
 }
