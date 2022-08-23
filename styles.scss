@@ -3,6 +3,8 @@ $bg-colour: #ffffff;
 $nav-hover-colour: #c99feb;
 $pop-colour: #50129b;
 $contact-bg-colour: #d1f1ff;
+$about-bg-colour: #dfd1ff;
+$project-bg-colour: #daffe7;
 
 * {
 	box-sizing: border-box;
@@ -82,7 +84,7 @@ h4 {
 .about-text {
 	padding: 5%;
 	margin: 0;
-	background-color: #dfd1ff;
+	background-color: $about-bg-colour;
 }
 
 section {
@@ -167,7 +169,7 @@ a {
 
 .project {
 	width: 27.33%;
-	background-color: #daffe7;
+	background-color: $project-bg-colour;
 	margin: 3%;
 	padding: 10px;
 
@@ -179,7 +181,6 @@ a {
 
 	p {
 		text-align: justify;
-		background-color: #daffe7;
 		margin: 10px;
 	}
 
@@ -267,7 +268,6 @@ footer div {
 	
 	.project {
 		width: 46%;
-		background-color: #daffe7;
 		margin: 2%;
 
 		img {
