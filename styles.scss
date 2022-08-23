@@ -269,12 +269,12 @@ footer div {
 		width: 46%;
 		background-color: #daffe7;
 		margin: 2%;
-	}
-	
-	.project img {
-		width: 100%;
-		height: auto;
-		padding: 5%;
+
+		img {
+			width: 100%;
+			height: auto;
+			padding: 5%;
+		}
 	}
 	
 	h5 {
@@ -286,6 +286,16 @@ footer div {
 	
 	.about {
 		flex-direction: column-reverse;
+
+		img {
+			width: 100%;
+			height: auto;
+			padding: 0;
+		}
+
+		div {
+			width: 100%;
+		}
 	}
 	
 	.img-div {
@@ -329,16 +339,6 @@ footer div {
 		margin: 5%;
 	}
 	
-	.about img {
-		width: 100%;
-		height: auto;
-		padding: 0;
-	}
-	
-	.about div {
-		width: 100%;
-	}
-	
 	section {
 		width: 100%;
 		padding: 0;
@@ -356,13 +356,13 @@ footer div {
 	.project {
 		width: 90%;
 		margin: 5%;
-	}
-	
-	.project a, .project p {
-		padding: 2%;
-	}
-	
-	.project img {
-		padding: 5%;
+		
+		a, p {
+			padding: 2%;
+		}
+
+		img {
+			padding: 5%;
+		}
 	}
 }
