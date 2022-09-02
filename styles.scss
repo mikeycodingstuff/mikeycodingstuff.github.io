@@ -225,6 +225,7 @@ p {
 	
 	.contact-links {
 		display: flex;
+		flex-wrap: wrap;
 	
 		a {
 			margin: 0;
@@ -344,6 +345,10 @@ footer div {
 	
 	nav {
 		justify-content: center;
+
+		.links {
+			font-size: 1.3rem;
+		}
 	}
 	
 	a {
