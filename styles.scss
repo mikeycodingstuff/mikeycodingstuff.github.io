@@ -37,7 +37,6 @@ nav {
 	box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
 
 	.links {
-		margin: 15px;
 		font-size: 1.7rem;
 		display: flex;
 		justify-content: center;
@@ -323,7 +322,7 @@ footer div {
 		}
 
 		.mikey-img-div {
-			padding: 100px;
+			padding: 35px;
 		}
 
 		.about-text {
@@ -344,6 +343,10 @@ footer div {
 	
 	nav {
 		justify-content: center;
+
+		.links {
+			font-size: 1.3rem;
+		}
 	}
 	
 	a {
