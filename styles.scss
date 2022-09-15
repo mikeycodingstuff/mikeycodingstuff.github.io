@@ -18,6 +18,10 @@ $links-hover: #2fcaca;
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+  }
+
 body {
 	margin: 0;
 	font-family: 'Courier New', monospace;
@@ -131,6 +135,11 @@ h5 {
 	margin: 0;
 }
 
+h6 {
+	font-weight: normal;
+	font-size: 1.5rem;
+}
+
 p {
 	font-size: 1.2rem;
 }
@@ -190,6 +199,10 @@ p {
 
 	p {
 		text-align: justify;
+		margin: 10px;
+	}
+	
+	h6 {
 		margin: 10px;
 	}
 
