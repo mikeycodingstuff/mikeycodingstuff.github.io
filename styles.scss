@@ -198,10 +198,9 @@ p {
 	}
 
 	p {
-		text-align: justify;
 		margin: 10px;
 	}
-	
+
 	h6 {
 		margin: 10px;
 	}
@@ -218,8 +217,11 @@ p {
 	.project-links {
 		display: flex;
 		justify-content: space-around;
-		text-decoration: underline;
-		font-size: 1.5rem;
+		
+		a{
+			text-decoration: underline;
+			font-size: 1.5rem;
+		}
 	}
 }
 
