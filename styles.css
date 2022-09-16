@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Courier New", monospace;
@@ -26,7 +30,7 @@ nav .links {
   display: flex;
   justify-content: center;
 }
-nav .links a:hover, nav h2 a:hover {
+nav .links a:hover, nav .nav-name a:hover {
   color: #c99feb;
 }
 
@@ -38,7 +42,7 @@ a {
   transition: color 0.25s;
 }
 
-#about, #portfolio, #contact {
+#top, #about, #portfolio, #contact {
   scroll-margin-top: 70px;
 }
 
@@ -80,34 +84,39 @@ h1 {
   margin-left: 20%;
 }
 
-h2 {
+.nav-name {
   font-weight: normal;
   font-size: 2rem;
 }
-h2 a {
+.nav-name a {
   color: #50129b;
   white-space: nowrap;
 }
 
-h3 {
+.tagline {
   font-weight: normal;
   font-size: 2rem;
   padding-left: 20%;
 }
 
-h4 {
+h3 {
   font-weight: normal;
   font-size: 4rem;
   text-decoration: underline;
   margin: 0;
 }
 
-h5 {
+h4 {
   text-align: center;
   font-size: 2.5em;
   font-weight: normal;
   text-decoration: underline;
   margin: 0;
+}
+
+h5 {
+  font-weight: normal;
+  font-size: 1.5rem;
 }
 
 p {
@@ -163,7 +172,9 @@ p {
   padding: 15px;
 }
 .project p {
-  text-align: justify;
+  margin: 10px;
+}
+.project h5 {
   margin: 10px;
 }
 .project a {
@@ -176,6 +187,8 @@ p {
 .project .project-links {
   display: flex;
   justify-content: space-around;
+}
+.project .project-links a {
   text-decoration: underline;
   font-size: 1.5rem;
 }
@@ -250,10 +263,10 @@ footer div {
     text-align: center;
     margin: 0;
   }
-  h2 {
+  .nav-name {
     display: none;
   }
-  h3 {
+  .tagline {
     font-weight: normal;
     font-size: 1.5rem;
     text-align: center;
