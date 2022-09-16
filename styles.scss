@@ -18,6 +18,10 @@ $links-hover: #2fcaca;
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+  }
+
 body {
 	margin: 0;
 	font-family: 'Courier New', monospace;
@@ -43,7 +47,7 @@ nav {
 		justify-content: center;
 	}
 
-	.links a:hover, h2 a:hover {
+	.links a:hover, .nav-name a:hover {
 		color: $nav-hover-colour;
 	}
 }
@@ -56,7 +60,7 @@ a {
 	transition: color 0.25s;
 }
 
-#about, #portfolio, #contact {
+#top, #about, #portfolio, #contact {
 	scroll-margin-top: 70px;
 }
 
@@ -101,7 +105,7 @@ h1 {
 	margin-left: 20%;
 }
 
-h2 {
+.nav-name {
 	font-weight: normal;
 	font-size: 2rem;
 	a {
@@ -110,25 +114,30 @@ h2 {
 	}
 }
 
-h3 {
+.tagline {
 	font-weight: normal;
 	font-size: 2rem;
 	padding-left: 20%;
 }
 
-h4 {
+h3 {
 	font-weight: normal;
 	font-size: 4rem;
 	text-decoration: underline;
 	margin: 0;
 }
 
-h5 {
+h4 {
 	text-align: center;
 	font-size: 2.5em;
 	font-weight: normal;
 	text-decoration: underline;
 	margin: 0;
+}
+
+h5 {
+	font-weight: normal;
+	font-size: 1.5rem;
 }
 
 p {
@@ -189,7 +198,10 @@ p {
 	}
 
 	p {
-		text-align: justify;
+		margin: 10px;
+	}
+
+	h5 {
 		margin: 10px;
 	}
 
@@ -205,8 +217,11 @@ p {
 	.project-links {
 		display: flex;
 		justify-content: space-around;
-		text-decoration: underline;
-		font-size: 1.5rem;
+		
+		a{
+			text-decoration: underline;
+			font-size: 1.5rem;
+		}
 	}
 }
 
@@ -294,11 +309,11 @@ footer div {
 		margin: 0;
 	}
 	
-	h2 {
+	.nav-name {
 		display: none;
 	}
 	
-	h3 {
+	.tagline {
 		font-weight: normal;
 		font-size: 1.5rem;
 		text-align: center;

@@ -8,10 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	
+
 	<nav>
-		<h2><a href="index.html#">Mikey Ying</a></h2>
-		
+		<h2 class="nav-name"><a href="#top">Mikey Ying</a></h2>
 		<div class="links">
 			<a href="#about">About</a>
 			<a href="#portfolio">Portfolio</a>
@@ -19,67 +18,39 @@
 		</div>	
 	</nav>
 	
-	<header>
+	<header id="top">
 		<div class="header-text">
 			<h1>Hi,</h1>
 			<h1><span>I'm Mikey!</span></h1>
-			<h3>Full Stack Developer</h3>
+			<h2 class="tagline">Full Stack Developer</h2>
 		</div>
 	</header>
 	
-
 	<section class="about">
 		<div>
-			<h4 class="about-heading" id="about">About Me</h4>
-				
+			<h3 class="about-heading" id="about">About Me</h3>
 			<div class="about-text">
-				<p>
-					I'm Mikey, a student on the full stack development course at IO academy.
-				</p>
-				
-				<p>
-					Since discovering coding I have loved learning more and more about it and applying this in practice to develop my abilities.
-				</p>
-				
-				<p>
-					After finishing my Bachelor's and Master's in Philosophy
-					I was unsure what I wanted to do in life; now I am really
-					excited to be starting a career in development.
-				</p>
-				
-				<p>
-					I have found that a lot of my skills gained through studying
-					philosophy can translate well into a coding environment, such as problem solving or from learning formal logic.
-				</p>
+				<p>I'm Mikey, a student on the full stack development course at IO academy.</p>
+				<p>Since discovering coding I have loved learning more and more about it and applying this in practice to develop my abilities.</p>
+				<p>After finishing my Bachelor's and Master's in Philosophy I was unsure what I wanted to do in life; now I am really excited to be starting a career in development.</p>
+				<p>I have found that a lot of my skills gained through studying philosophy can translate well into a coding environment, such as problem solving or from learning formal logic.</p>
 			</div>
 		</div>
-			
 		<div class="mikey-img-div">
 			<img src="mikey.jpg" alt="Picture of Mikey">
 		</div>
 	</section>
 
 	<section>
-		<h4 class="portfolio-heading" id="portfolio">Portfolio</h4>
-			
+		<h3 class="portfolio-heading" id="portfolio">Portfolio</h3>
 		<div class="projects-container">
 			<div class="project">
-				<h5>Collector's App</h5>
-					
-				<img src="project-imgs/collection.png" alt="Screenshot of a web page showing collection app project">
-					
-				<p>
-					An app that displays a collection of albums from a database.
-				</p>
-				<p>
-					For each album I have displayed the name of the album, the artist name, the number of tracks and the album length.
-				</p>
-				<p>
-					Additional functionality was added in the
-					ability to add a new album to the collection, and to delete any album
-					from the collection.
-				</p>
-					
+				<h4>Collector's App</h4>
+				<img src="project-imgs/collection.png" alt="Collection app project">
+				<p>An app built in PHP that displays a collection of albums from a database.</p>
+				<p>For each album I have displayed the name of the album, the artist name, the number of tracks and the album length.</p>
+				<p>Additional functionality was added in the ability to add a new album to the collection, and to delete any album from the collection.</p>
+				<h5>Built using: PHP, MySQL</h5>
 				<div class="project-links">
 					<a href="https://github.com/mikeycodingstuff/collection" target="_blank">>Github</a>
 					<a href="https://2022-michaely.dev.io-academy.uk/collection/" target="_blank">>Live</a>
@@ -87,73 +58,52 @@
 			</div>
 				
 			<div class="project">
-				<h5>React Email Client</h5>
-					
-				<img src="project-imgs/email-client.png" alt="Screenshot of an email client built using React">
-					
-				<p>
-					We created an email client in React using supplied designs and an API with email data.
-				</p>
-				<p>
-					The client displays the user's inbox as well as sent emails.
-				</p>
-				<p>
-					The email list shows a preview of every email which the user can click to open the complete email.
-				</p>
-				<p>
-					Additional functionality was added to allow the user to create and send a new email.
-					This data is validated and then sent to the API.
-				</p>
-				<p>
-					Relevant error messages are shown if the data is not valid or if the server is down.
-					If the email is sent successfully it appears in the sent box.
-				</p>
-					
-				<div class="project-links">
-					<a href="https://github.com/iO-Academy/2022-jul-seamail" target="_blank">>Github</a>
-					<a href="#" target="_blank">>Live</a>
-				</div>
-			</div>
-				
-			<div class="project">
-				<h5>Film Quiz App</h5>
-					
-				<img src="project-imgs/quotlefish.png" alt="Image of Project 3">
-					
-				<p>
-					We created a film quiz game using JavaScript.
-				</p>
-				<p>
-					The player is shown a quote from a film and has to pick the film the quote is from.
-				</p>
-				<p>
-					Clicking the 'i' icon brings up an instructions modal informing the player of how the game works.
-				</p>
-				<p>
-					Once the player starts the game a 30 second timer is started. The player then tries to guess as many quotes as they can.
-				</p>
-				<p>
-					A score counter tracks the number of guesses and the number the player has gotten correct with a visual indicator when they reach a multiple of 5.
-				</p>
-				<p>
-					A hint button displays the correct film's release year when clicked.
-				</p>
-					
+				<h4>Film Quiz App</h4>
+				<img src="project-imgs/quotlefish.png" alt="Film quiz app">
+				<p>A film quiz game built in JavaScript, where the player is shown a quote from a film and has to pick the film the quote is from.</p>
+				<p>Once the game starts the player has 30 seconds to attempt to guess as many quotes as they can.</p>
+				<p>A score counter displays the correct guesses with a visual indicator when they reach a multiple of 5.</p>
+				<p>A hint button shows the correct film's release year when clicked.</p>
+				<h5>Built using: JS</h5>
 				<div class="project-links">
 					<a href="https://github.com/iO-Academy/2022-jul-guess-the-film" target="_blank">>Github</a>
 					<a href="#" target="_blank">>Live</a>
 				</div>
 			</div>
+
+			<div class="project">
+				<h4>React Email Client</h4>
+				<img src="project-imgs/seamail.png" alt="Email client built using React">
+				<p>An email client built in React using supplied designs and an API with email data.</p>
+				<p>Displays the user's inbox as well as sent emails.</p>
+				<p>Email list shows a preview of all emails. The user can select a preview to open the complete email.</p>
+				<h5>Built using: React, SCSS</h5>
+				<div class="project-links">
+					<a href="https://github.com/iO-Academy/2022-jul-seamail" target="_blank">>Github</a>
+					<a href="https://2022-seamail.dev.io-academy.uk/" target="_blank">>Live</a>
+				</div>
+			</div>
 				
 			<div class="project">
-				<h5>Project 4</h5>
-					
-				<img src="project-imgs/project-placeholder.jpg" alt="Image of Project 4">
-					
-				<p>
-					Description of Project 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-					
+				<h4>OOP PHP listing app</h4>
+				<img src="project-imgs/dunkin-bisquids.png" alt="OOP PHP listing app">
+				<p>An object-oriented PHP project, styled with bootstrap, that fetches and displays a list of biscuits from a MySQL database.</p>
+				<p>Each biscuit shows a total dunk and flunk count and selecting a biscuit shows more information.</p>
+				<p>Users can 'dunk' or 'flunk' biscuits, and view their favourite (dunked) biscuits in a separate page.</p>
+				<p>A hydrator is used to populate data which is displayed with a viewhelper.</p>
+				<p>Custom exception handling was used to deal with errors.</p>
+				<h5>Built using: PHP, MySQL</h5>
+				<div class="project-links">
+					<a href="https://github.com/iO-Academy/2022-jul-DunkinBisquids" target="_blank">>Github</a>
+					<a href="https://dev.io-academy.uk/projects/2022-july/dunkin-bisquids/index.php" target="_blank">>Live</a>
+				</div>
+			</div>
+				
+			<div class="project">
+				<h4>Project 5</h4>
+				<img src="project-imgs/project-placeholder.jpg" alt="Project 5 app">
+				<p>Description of Project 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h5>Built using: </h5>
 				<div class="project-links">
 					<a href="#" target="_blank">>Github</a>
 					<a href="#" target="_blank">>Live</a>
@@ -161,29 +111,10 @@
 			</div>
 				
 			<div class="project">
-				<h5>Project 5</h5>
-					
-				<img src="project-imgs/project-placeholder.jpg" alt="Image of Project 5">
-					
-				<p>
-					Description of Project 5. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-					
-				<div class="project-links">
-					<a href="#" target="_blank">>Github</a>
-					<a href="#" target="_blank">>Live</a>
-				</div>
-			</div>
-				
-			<div class="project">
-				<h5>Project 6</h5>
-					
-				<img src="project-imgs/project-placeholder.jpg" alt="Image of Project 6">
-					
-				<p>
-					Description of Project 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-					
+				<h4>Project 6</h4>
+				<img src="project-imgs/project-placeholder.jpg" alt="Project 6 app">
+				<p>Description of Project 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h5>Built using: </h5>
 				<div class="project-links">
 					<a href="#" target="_blank">>Github</a>
 					<a href="#" target="_blank">>Live</a>
@@ -193,11 +124,9 @@
 	</section>
 		
 	<section class="contact">
-		<h4 class="contact-heading" id="contact">CONTACT</h4>
+		<h3 class="contact-heading" id="contact">CONTACT</h3>
 		<div class="contact-container">
-			<p class="contact-text">
-				The best way to contact me is via e-mail, however you can also reach me via the links below
-			</p>
+			<p class="contact-text">The best way to contact me is via e-mail, however you can also reach me via the links below</p>
 			<div class="contact-links">
 				<a href="mailto:mikeyinguk@gmail.com" target="_blank">
 					<div class="email">
