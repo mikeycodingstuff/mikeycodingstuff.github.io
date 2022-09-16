@@ -23,6 +23,7 @@ nav {
   top: 0;
   width: 100%;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  z-index: 1;
 }
 nav .links {
   margin: 15px;
@@ -57,7 +58,8 @@ header .header-text {
   float: right;
   width: 50%;
   height: 100%;
-  background-color: rgba(116, 111, 114, 0.65);
+  background-color: rgba(149, 148, 152, 0.3);
+  backdrop-filter: blur(10px);
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -67,7 +69,7 @@ header .header-text span {
   transition: background-color 0.5s, color 0.5s;
 }
 header .header-text span:hover {
-  background-color: rgba(250, 250, 250, 0.65);
+  background-color: rgba(250, 250, 250, 0.5);
   color: #50129b;
 }
 
