@@ -13,6 +13,10 @@ body {
   background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);
 }
 
+::selection {
+  background: #cfbeff;
+}
+
 nav {
   background-color: #ffffff;
   display: flex;
@@ -160,6 +164,7 @@ p {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project {
