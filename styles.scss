@@ -5,11 +5,13 @@ $pop-colour: #50129b;
 $contact-bg-colour: rgba(255, 255, 255, 0.6);
 $about-bg-colour: rgba(255, 255, 255, 0.6);
 $project-bg-colour: rgba(255, 255, 255, 0.6);
-$header-backup-bg: #cfbeff;
 $links-hover: #2fcaca;
 $highlight-text-colour: #cfbeff;
+$header-font: 'Roboto', sans-serif;
+$main-font: 'Figtree', monospace;
+$tertiary-font: 'Courier New', monospace;
 
-//mixin
+//mixins
 @mixin headingStyles($mLeft, $mBot) {
 	margin-left: $mLeft;
 	margin-bottom: $mBot;
@@ -25,7 +27,8 @@ html {
 
 body {
 	margin: 0;
-	font-family: 'Courier New', monospace;
+	font-family: $main-font;
+	font-weight: 300;
 	background: #cfbeff;
 	background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);	
 }
@@ -35,6 +38,7 @@ body {
   }
 
 nav {
+	font-family: $tertiary-font;
 	background-color: $bg-colour;
 	display: flex;
 	justify-content: space-between;
@@ -73,7 +77,6 @@ a {
 header {
 	margin-top: 70px;
 	background-image: url("header-background.jpg");
-	background-color: $header-backup-bg;
 	background-size: cover;
 	height: 100vh;
 	
@@ -105,8 +108,8 @@ section {
 }
 
 h1 {
-	font-family: Roboto, sans-serif;
-	font-weight: normal;
+	font-family: $header-font;
+	font-weight: 100;
 	font-size: 6rem;
 	margin: 2%;
 	margin-left: 20%;
@@ -122,29 +125,25 @@ h1 {
 }
 
 .tagline {
+	font-family: $tertiary-font;
 	font-weight: normal;
 	font-size: 2rem;
-	padding-left: 20%;
+	margin-left: 20%;
 }
 
 h3 {
-	font-weight: normal;
+	font-family: $header-font;
+	font-weight: 400;
 	font-size: 4rem;
-	text-decoration: underline;
 	margin: 0;
 }
 
 h4 {
+	font-family: $header-font;
 	text-align: center;
 	font-size: 2.5em;
 	font-weight: normal;
-	text-decoration: underline;
 	margin: 0;
-}
-
-h5 {
-	font-weight: normal;
-	font-size: 1.5rem;
 }
 
 p {
@@ -198,6 +197,9 @@ p {
 	background-color: $project-bg-colour;
 	margin: 3%;
 	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	img {
 		width: 100%;
@@ -206,10 +208,6 @@ p {
 	}
 
 	p {
-		margin: 10px;
-	}
-
-	h5 {
 		margin: 10px;
 	}
 
