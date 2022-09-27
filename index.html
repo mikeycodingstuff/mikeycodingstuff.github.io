@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-gb">
 <head>
-  <title>Mikey's Portfolio</title>
-  <link rel ="stylesheet" href="normalize.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mikey's Portfolio</title>
+	<link rel ="stylesheet" href="normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
@@ -30,10 +32,13 @@
 		<div>
 			<h3 class="about-heading" id="about">About Me</h3>
 			<div class="about-text">
-				<p>I'm Mikey, a student on the full stack development course at IO academy.</p>
+				<p>I'm Mikey, an aspiring developer!</p>
+				<p>I am currently attending a full stack development course at iO Academy, due to graduate in October.</p>
 				<p>Since discovering coding I have loved learning more and more about it and applying this in practice to develop my abilities.</p>
-				<p>After finishing my Bachelor's and Master's in Philosophy I was unsure what I wanted to do in life; now I am really excited to be starting a career in development.</p>
-				<p>I have found that a lot of my skills gained through studying philosophy can translate well into a coding environment, such as problem solving or from learning formal logic.</p>
+				<p>After finishing my Bachelor's and Master's in Philosophy I was unsure what I wanted to do in life; now I am really excited to be starting a career in development!</p>
+				<p>I have found that a lot of the skills I have gained and developed through studying philosophy translate well into a coding environment.
+					Also, many concepts I have studied in philosophy such as formal logic, or syntax and semantics are directly applicable to programming,
+					which has been fascinating to learn!</p>
 			</div>
 		</div>
 		<div class="mikey-img-div">
@@ -45,12 +50,14 @@
 		<h3 class="portfolio-heading" id="portfolio">Portfolio</h3>
 		<div class="projects-container">
 			<div class="project">
-				<h4>Collector's App</h4>
-				<img src="project-imgs/collection.png" alt="Collection app project">
-				<p>An app built in PHP that displays a collection of albums from a database.</p>
-				<p>For each album I have displayed the name of the album, the artist name, the number of tracks and the album length.</p>
-				<p>Additional functionality was added in the ability to add a new album to the collection, and to delete any album from the collection.</p>
-				<h5>Built using: PHP, MySQL</h5>
+				<div>
+					<h4>Collector's App</h4>
+					<img src="project-imgs/collection.png" alt="Collection app project">
+					<p>An app built in PHP that displays a collection of albums from an SQL database.</p>
+					<p>Information about each album is displayed, and users can add a new album to the collection, and delete any album from the collection.</p>
+					<p>User inputs are sanitised and validated, making use of a custom regular expression.</p>
+					<p>A try catch block is used to handle errors, with dynamic messages set via GET data.</p>
+				</div>
 				<div class="project-links">
 					<a href="https://github.com/mikeycodingstuff/collection" target="_blank">>Github</a>
 					<a href="https://2022-michaely.dev.io-academy.uk/collection/" target="_blank">>Live</a>
@@ -58,13 +65,14 @@
 			</div>
 				
 			<div class="project">
-				<h4>Film Quiz App</h4>
-				<img src="project-imgs/quotlefish.png" alt="Film quiz app">
-				<p>A film quiz game built in JavaScript, where the player is shown a quote from a film and has to pick the film the quote is from.</p>
-				<p>Once the game starts the player has 30 seconds to attempt to guess as many quotes as they can.</p>
-				<p>A score counter displays the correct guesses with a visual indicator when they reach a multiple of 5.</p>
-				<p>A hint button shows the correct film's release year when clicked.</p>
-				<h5>Built using: JS</h5>
+				<div>
+					<h4>Film Quiz App</h4>
+					<img src="project-imgs/quotlefish.png" alt="Film quiz app">
+					<p>A film quiz game built in JavaScript, where the player is shown a quote from a film and has to pick the film the quote is from.</p>
+					<p>Once the game starts the player has 30 seconds to attempt to guess as many quotes as they can.</p>
+					<p>A score counter displays the correct guesses with a visual indicator when they reach a multiple of 5.</p>
+					<p>A hint button shows the correct film's release year when clicked.</p>
+				</div>
 				<div class="project-links">
 					<a href="https://github.com/iO-Academy/2022-jul-guess-the-film" target="_blank">>Github</a>
 					<a href="#" target="_blank">>Live</a>
@@ -72,12 +80,14 @@
 			</div>
 
 			<div class="project">
-				<h4>React Email Client</h4>
-				<img src="project-imgs/seamail.png" alt="Email client built using React">
-				<p>An email client built in React using supplied designs and an API with email data.</p>
-				<p>Displays the user's inbox as well as sent emails.</p>
-				<p>Email list shows a preview of all emails. The user can select a preview to open the complete email.</p>
-				<h5>Built using: React, SCSS</h5>
+				<div>
+					<h4>React Email Client</h4>
+					<img src="project-imgs/seamail.png" alt="Email client built using React">
+					<p>An email client built in React consuming a pre-built API to fit a supplied design.</p>
+					<p>Displays the user's inbox as well as sent emails.</p>
+					<p>Email list shows a preview of all emails. The user can select a preview to open the complete email.</p>
+					<p>Styled using Sass and Bootstrap, the app utilises modern JavaScript practices such as fetch to interact with the back-end API, and hooks to handle data rendering.</p>
+				</div>
 				<div class="project-links">
 					<a href="https://github.com/iO-Academy/2022-jul-seamail" target="_blank">>Github</a>
 					<a href="https://2022-seamail.dev.io-academy.uk/" target="_blank">>Live</a>
@@ -85,14 +95,14 @@
 			</div>
 				
 			<div class="project">
-				<h4>OOP PHP listing app</h4>
-				<img src="project-imgs/dunkin-bisquids.png" alt="OOP PHP listing app">
-				<p>An object-oriented PHP project, styled with bootstrap, that fetches and displays a list of biscuits from a MySQL database.</p>
-				<p>Each biscuit shows a total dunk and flunk count and selecting a biscuit shows more information.</p>
-				<p>Users can 'dunk' or 'flunk' biscuits, and view their favourite (dunked) biscuits in a separate page.</p>
-				<p>A hydrator is used to populate data which is displayed with a viewhelper.</p>
-				<p>Custom exception handling was used to deal with errors.</p>
-				<h5>Built using: PHP, MySQL</h5>
+				<div>
+					<h4>OOP PHP listing app</h4>
+					<img src="project-imgs/dunkin-bisquids.png" alt="OOP PHP listing app">
+					<p>An object-oriented PHP project, styled with bootstrap, that fetches and displays a list of biscuits from a MySQL database.</p>
+					<p>We used the hydrator entity pattern to populate the app with data and a viewhelper to display it on the front end</p>
+					<p>We managed namespacing and autoloading using Composer and attempted to follow SOLID principles where possible.</p>
+					<p>Testing was performed with PHPUnit and custom exception handling was used to deal with errors.</p>
+				</div>
 				<div class="project-links">
 					<a href="https://github.com/iO-Academy/2022-jul-DunkinBisquids" target="_blank">>Github</a>
 					<a href="https://dev.io-academy.uk/projects/2022-july/dunkin-bisquids/index.php" target="_blank">>Live</a>
@@ -102,11 +112,11 @@
 	</section>
 		
 	<section class="contact">
-		<h3 class="contact-heading" id="contact">CONTACT</h3>
+		<h3 class="contact-heading" id="contact">Contact</h3>
 		<div class="contact-container">
 			<p class="contact-text">The best way to contact me is via e-mail, however you can also reach me via the links below</p>
 			<div class="contact-links">
-				<a href="mailto:mikeyinguk@gmail.com" target="_blank">
+				<a href="mailto:mikeyinguk+jobs@gmail.com" target="_blank">
 					<div class="email">
 						<img src="email-icon.svg" alt="email logo">
 						<p>Email</p>
