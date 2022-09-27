@@ -8,8 +8,8 @@ $project-bg-colour: rgba(255, 255, 255, 0.6);
 $links-hover: #2fcaca;
 $highlight-text-colour: #cfbeff;
 $header-font: 'Roboto', sans-serif;
-$main-font: 'Inconsolata', serif;
-$tagline-font: 'Courier New', monospace;
+$main-font: 'Figtree', monospace;
+$tertiary-font: 'Courier New', monospace;
 
 //mixins
 @mixin headingStyles($mLeft, $mBot) {
@@ -37,8 +37,7 @@ body {
   }
 
 nav {
-	font-family: $header-font;
-	font-weight: 300;
+	font-family: $tertiary-font;
 	background-color: $bg-colour;
 	display: flex;
 	justify-content: space-between;
@@ -125,7 +124,7 @@ h1 {
 }
 
 .tagline {
-	font-family: $tagline-font;
+	font-family: $tertiary-font;
 	font-weight: normal;
 	font-size: 2rem;
 	margin-left: 20%;
