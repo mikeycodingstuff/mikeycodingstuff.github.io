@@ -28,6 +28,7 @@ html {
 body {
 	margin: 0;
 	font-family: $main-font;
+	font-weight: 300;
 	background: #cfbeff;
 	background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);	
 }
@@ -134,7 +135,6 @@ h3 {
 	font-family: $header-font;
 	font-weight: 400;
 	font-size: 4rem;
-	text-decoration: underline;
 	margin: 0;
 }
 
@@ -144,11 +144,6 @@ h4 {
 	font-size: 2.5em;
 	font-weight: normal;
 	margin: 0;
-}
-
-h5 {
-	font-weight: normal;
-	font-size: 1.5rem;
 }
 
 p {
@@ -213,10 +208,6 @@ p {
 	}
 
 	p {
-		margin: 10px;
-	}
-
-	h5 {
 		margin: 10px;
 	}
 
