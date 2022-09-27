@@ -8,7 +8,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "Courier New", monospace;
+  font-family: "Figtree", monospace;
+  font-weight: 300;
   background: #cfbeff;
   background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);
 }
@@ -18,6 +19,7 @@ body {
 }
 
 nav {
+  font-family: "Courier New", monospace;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -54,7 +56,6 @@ a {
 header {
   margin-top: 70px;
   background-image: url("header-background.jpg");
-  background-color: #cfbeff;
   background-size: cover;
   height: 100vh;
 }
@@ -83,8 +84,8 @@ section {
 }
 
 h1 {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
   font-size: 6rem;
   margin: 2%;
   margin-left: 20%;
@@ -100,29 +101,25 @@ h1 {
 }
 
 .tagline {
+  font-family: "Courier New", monospace;
   font-weight: normal;
   font-size: 2rem;
-  padding-left: 20%;
+  margin-left: 20%;
 }
 
 h3 {
-  font-weight: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 4rem;
-  text-decoration: underline;
   margin: 0;
 }
 
 h4 {
+  font-family: "Roboto", sans-serif;
   text-align: center;
   font-size: 2.5em;
   font-weight: normal;
-  text-decoration: underline;
   margin: 0;
-}
-
-h5 {
-  font-weight: normal;
-  font-size: 1.5rem;
 }
 
 p {
@@ -172,6 +169,9 @@ p {
   background-color: rgba(255, 255, 255, 0.6);
   margin: 3%;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .project img {
   width: 100%;
@@ -179,9 +179,6 @@ p {
   padding: 15px;
 }
 .project p {
-  margin: 10px;
-}
-.project h5 {
   margin: 10px;
 }
 .project a {
