@@ -1,5 +1,5 @@
 //variables
-$bg-colour: #f9fefe;
+$nav-bg-colour: #f9fefe;
 $nav-hover-colour: #c99feb;
 $pop-colour: #470c8f;
 $contact-bg-colour: rgba(255, 255, 255, 0.6);
@@ -10,18 +10,7 @@ $highlight-text-colour: #cfbeff;
 $main-font: 'Poppins', sans-serif;
 $code-font: 'Fira Code', monospace;
 
-//mixins
-@mixin headingStyles($mLeft, $mBot) {
-	margin-left: $mLeft;
-	margin-bottom: $mBot;
-}
-
-* {
-	box-sizing: border-box;
-}
-
 html {
-	scroll-behavior: smooth;
 	font-family: $main-font;
 }
 
@@ -34,40 +23,37 @@ body {
 }
 
 nav {
-	font-family: $main-font;
-	background-color: $bg-colour;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 70px;
-	position: fixed;
-	top: 0;
-	width: 100%;
+	font-family: $code-font;
+	background-color: $nav-bg-colour;
 	box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
-	z-index: 1;
 
-	.links {
-		margin: 15px;
-		font-size: 1.7rem;
-		display: flex;
-		justify-content: center;
+	.links a:hover, .nav-logo:hover {
+		color: $nav-hover-colour;
 	}
 
-	.links a:hover, .nav-name a:hover {
-		color: $nav-hover-colour;
+	.nav-logo {
+		color: $pop-colour;
+	}
+
+	.cv-btn {
+		background-color: $pop-colour;
+		color: $nav-bg-colour;
+	}
+
+	.cv-btn:hover {
+		background-color: $nav-hover-colour;
+		color: $pop-colour;
 	}
 }
 
 a {
 	text-decoration: none;
 	color: #000000;
-	margin-left: 60px;
-	margin-right: 60px;
 	transition: color 0.4s;
 }
 
 #about, #portfolio, #contact {
-	scroll-margin-top: 70px;
+	scroll-margin-top: 80px;
 }
 
 header {
@@ -117,16 +103,6 @@ section {
 	padding-right: 12.5%;
 }
 
-
-.nav-name {
-	font-weight: normal;
-	font-size: 2rem;
-	a {
-		color: $pop-colour;
-		white-space: nowrap;
-	}
-}
-
 h3 {
 	font-family: $main-font;
 	font-weight: 400;
@@ -160,10 +136,6 @@ p {
 	img {
 		width: 100%;
 		height: auto;
-	}
-
-	.about-heading {
-		@include headingStyles(30px, 10px);
 	}
 
 	.about-text {
@@ -227,10 +199,6 @@ p {
 	}
 }
 
-.contact-heading {
-	@include headingStyles(30px, 10px);
-}
-
 .contact-container {
 	margin-bottom: 30px;
 	background-color: $contact-bg-colour;
@@ -269,115 +237,8 @@ p {
 
 footer div {
 	color: $pop-colour;
-	background-color: $bg-colour;
+	background-color: $nav-bg-colour;
 	padding-left: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-
-@media screen and (max-width: 1600px) {
-	
-	section {
-		padding-left: 50px;
-		padding-right: 50px;
-	}
-}
-
-@media screen and (max-width: 1300px) {
-	
-	a {
-		margin-left: 30px;
-		margin-right: 30px;
-	}
-	
-	.project {
-		width: 46%;
-		margin: 2%;
-
-		img {
-			width: 100%;
-			height: auto;
-			padding: 5%;
-		}
-	}
-}
-
-@media screen and (max-width: 900px) {
-	
-	.nav-name {
-		display: none;
-	}
-
-	header {
-		div {
-			text-align: center;
-
-			h1 {
-				font-size: 4.5rem;
-			}
-	
-			h2 {
-				font-size: 1.2rem;
-			}
-			
-		}
-	}
-	
-	.about {
-		flex-direction: column-reverse;
-		margin-top: 0;
-
-		.about-heading {
-			@include headingStyles(0, 0);
-			text-align: center;
-		}
-
-		img {
-			width: 100%;
-			height: auto;
-		}
-
-		div {
-			width: auto;
-		}
-
-		.mikey-img-div {
-			padding: 35px;
-		}
-
-		.about-text {
-			margin: 5%;
-		}
-	}
-	
-	nav {
-		justify-content: center;
-
-		.links {
-			font-size: 1.3rem;
-		}
-	}
-	
-	section {
-		width: 100%;
-		padding: 0;
-	}
-	
-	.project {
-		width: 90%;
-		margin: 5%;
-		
-		a, p {
-			padding: 2%;
-		}
-	}
-
-	.contact-heading {
-		@include headingStyles(0, 0);
-		text-align: center;
-	}
-
-	.contact-container {
-		margin: 5%;
-	}
 }
