@@ -4,13 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: "Figtree", monospace;
 }
 
 body {
   margin: 0;
-  font-family: "Figtree", monospace;
   font-weight: 300;
-  background: #cfbeff;
   background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);
 }
 
@@ -19,7 +18,7 @@ body {
 }
 
 nav {
-  font-family: "Courier New", monospace;
+  font-family: "Fira Code", monospace;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -46,47 +45,38 @@ a {
   color: #000000;
   margin-left: 60px;
   margin-right: 60px;
-  transition: color 0.25s;
+  transition: color 0.4s;
 }
 
-#top, #about, #portfolio, #contact {
+#about, #portfolio, #contact {
   scroll-margin-top: 70px;
 }
 
 header {
   margin-top: 70px;
   height: 100vh;
-}
-header .header-text {
-  float: right;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(149, 148, 152, 0.3);
-  backdrop-filter: blur(10px);
-  color: #ffffff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
-header .header-text span {
-  transition: background-color 0.5s, color 0.5s;
-}
-header .header-text span:hover {
-  background-color: rgba(250, 250, 250, 0.5);
+header div {
   color: #50129b;
+}
+header div h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 10rem;
+  margin: 10rem 0;
+  font-weight: 400;
+}
+header div h2 {
+  font-family: "Fira Code", monospace;
+  font-weight: normal;
+  font-size: 2rem;
+  text-transform: lowercase;
 }
 
 section {
   padding-left: 12.5%;
   padding-right: 12.5%;
-}
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 6rem;
-  margin: 2%;
-  margin-left: 20%;
 }
 
 .nav-name {
@@ -98,22 +88,15 @@ h1 {
   white-space: nowrap;
 }
 
-.tagline {
-  font-family: "Courier New", monospace;
-  font-weight: normal;
-  font-size: 2rem;
-  margin-left: 20%;
-}
-
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 4rem;
   margin: 0;
 }
 
 h4 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 2.5em;
   font-weight: normal;
@@ -300,7 +283,7 @@ footer div {
     display: flex;
     align-items: center;
   }
-  header .header-text {
+  header div {
     float: none;
     width: 100%;
     height: 55%;
