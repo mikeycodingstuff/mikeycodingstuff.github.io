@@ -12,23 +12,28 @@
 	<script src="scripts.js" defer></script>
 </head>
 <body>
-
-	<nav class="navbar">
-		<div class="container">
-			<a class="navbar-brand nav-logo" href="#">Mikey Ying</a>
-			<div class="d-flex align-items-center links">
-				<a href="#about">About</a>
-				<a href="#portfolio">Portfolio</a>
-				<a href="#contact">Contact</a>
-				<a href="/mikey-ying-cv.pdf" download="mikey-ying-cv.pdf">
-					<button class="btn cv-btn">
+<nav>
+	<div class="container">
+		<div class="row py-3 align-items-center">
+			<div class="col-lg-4 d-none d-lg-block">
+				<a class="nav-logo text-lowercase" href="#">Mikey Ying</a>
+			</div>
+			<div class="col-12 col-lg-8 text-center d-flex align-items-center justify-content-around justify-content-lg-end">
+				<a class="mx-2 nav-link text-lowercase" href="#about">About</a>
+				<a class="mx-2 nav-link text-lowercase" href="#portfolio">Portfolio</a>
+				<a class="mx-2 nav-link text-lowercase" href="#contact">Contact</a>
+				<a class="mx-2 nav-link d-none d-lg-block" href="/mikey-ying-cv.pdf" download="mikey-ying-cv.pdf">
+					<button class="btn cv-btn text-lowercase">
 						Download CV
 					</button>
 				</a>
-			</div>	
-		</div>
-	</nav>
-	
+			</div>
+		</div>	
+	</div>
+</nav>
+
+
+<div class="container">
 	<header>
 		<div>
 			<h1>Hi,<br><span>I'm Mikey!</span></h1>
@@ -47,18 +52,18 @@
 				<p>I have found that a lot of the skills I have gained and developed through studying philosophy translate well into a coding environment.
 					Also, many concepts I have studied in philosophy such as formal logic, or syntax and semantics are directly applicable to programming,
 					which has been fascinating to learn!</p>
+				</div>
 			</div>
-		</div>
-	</section>
-
-	<section>
-		<h3 class="portfolio-heading" id="portfolio">Portfolio</h3>
-		<div class="projects-container">
-			<div class="project">
-				<div>
-					<h4>Collector's App</h4>
-					<img src="project-imgs/collection.png" alt="Collection app project">
-					<p>An app built in PHP that displays a collection of albums from an SQL database.</p>
+		</section>
+		
+		<section>
+			<h3 class="portfolio-heading" id="portfolio">Portfolio</h3>
+			<div class="projects-container">
+				<div class="project">
+					<div>
+						<h4>Collector's App</h4>
+						<img src="project-imgs/collection.png" alt="Collection app project">
+						<p>An app built in PHP that displays a collection of albums from an SQL database.</p>
 					<p>Information about each album is displayed, and users can add a new album to the collection, and delete any album from the collection.</p>
 					<p>User inputs are sanitised and validated, making use of a custom regular expression.</p>
 					<p>A try catch block is used to handle errors, with dynamic messages set via GET data.</p>
@@ -68,7 +73,7 @@
 					<a href="https://2022-michaely.dev.io-academy.uk/collection/" target="_blank">>Live</a>
 				</div>
 			</div>
-				
+			
 			<div class="project">
 				<div>
 					<h4>Film Quiz App</h4>
@@ -83,7 +88,7 @@
 					<a href="https://dev.io-academy.uk/projects/2022-july/quotlefish/" target="_blank">>Live</a>
 				</div>
 			</div>
-
+			
 			<div class="project">
 				<div>
 					<h4>React Email Client</h4>
@@ -98,7 +103,7 @@
 					<a href="https://2022-seamail.dev.io-academy.uk/" target="_blank">>Live</a>
 				</div>
 			</div>
-				
+			
 			<div class="project">
 				<div>
 					<h4>OOP PHP listing app</h4>
@@ -113,7 +118,7 @@
 					<a href="https://dev.io-academy.uk/projects/2022-july/dunkin-bisquids/index.php" target="_blank">>Live</a>
 				</div>
 			</div>
-
+			
 			<div class="project">
 				<div>
 					<h4>Academy Application Portal</h4>
@@ -142,14 +147,14 @@
 						<p>Email</p>
 					</div>
 				</a>
-					
+				
 				<a href="https://github.com/mikeycodingstuff" target="_blank">
 					<div class="github">
 						<img src="icons/github-icon.svg" alt="github logo">
 						<p>GitHub</p>
 					</div>
 				</a>
-					
+				
 				<a href="https://www.linkedin.com/in/mikeyying/" target="_blank">
 					<div class="linkedin">
 						<img src="icons/linkedin-icon.svg" alt="linkedin logo">
@@ -160,11 +165,12 @@
 		</div>
 	</section>
 
-	<footer>
-		<div>
-			2022 | Mikey Ying
-		</div>
-	</footer>
+</div>
 
+<footer>
+	<div class="container">
+		2022 | Mikey Ying
+	</div>
+</footer>
 </body>
 </html>
