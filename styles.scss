@@ -26,13 +26,21 @@ nav {
 	font-family: $code-font;
 	background-color: $nav-bg-colour;
 	box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
+	position: fixed;
+	width: 100%;
 
-	.links a:hover, .nav-logo:hover {
-		color: $nav-hover-colour;
+	.nav-link {
+		font-size: 1.5rem;
 	}
-
+	
 	.nav-logo {
 		color: $pop-colour;
+		font-size: 2rem;
+		font-weight: bold;
+	}
+
+	.nav-link:hover, .nav-logo:hover {
+		color: $nav-hover-colour;
 	}
 
 	.cv-btn {
@@ -57,26 +65,16 @@ a {
 }
 
 header {
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	
 	div {
 		color: $pop-colour;
-		margin: 0 1rem;
 
 		h1 {
 			font-family: $main-font;
-			font-size: 10rem;
-			font-weight: 400;
-			margin: 0;
 		}
 
 		h2 {
 			font-family: $code-font;
-			font-weight: normal;
-			font-size: 2rem;
 			text-transform: lowercase;
 		}
 
@@ -98,147 +96,44 @@ header {
 	}
 }
 
-section {
-	padding-left: 12.5%;
-	padding-right: 12.5%;
-}
-
 h3 {
 	font-family: $main-font;
-	font-weight: 400;
-	font-size: 4rem;
-	margin: 0;
 }
 
 h4 {
 	font-family: $main-font;
-	text-align: center;
-	font-size: 2.5em;
-	font-weight: normal;
-	margin: 0;
-}
-
-p {
-	font-size: 1.2rem;
 }
 
 .about {
-	display: flex;
-	margin-top: 80px;
-	margin-bottom: 80px;
-
-	div {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-	}
-
-	img {
-		width: 100%;
-		height: auto;
-	}
-
 	.about-text {
-		padding: 5%;
-		margin: 0;
 		background-color: $about-bg-colour;
 	}
-
-	.mikey-img-div {
-		justify-content: center;
-		padding-left: 10%;
-	}
-}
-
-.portfolio-heading {
-	text-align: center;
-}
-
-.projects-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
 }
 
 .project {
-	width: 27.33%;
 	background-color: $project-bg-colour;
-	margin: 3%;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-	img {
-		width: 100%;
-		height: auto;
-		padding: 15px;
-	}
-
-	p {
-		margin: 10px;
-	}
-
-	a {
-		padding: 4%;
-		margin: 0;
-	}
-
 	a:hover {
 		color: $links-hover;
 	}
 
 	.project-links {
-		display: flex;
-		justify-content: space-around;
-		
 		a{
 			text-decoration: underline;
-			font-size: 1.5rem;
 		}
 	}
 }
 
 .contact-container {
-	margin-bottom: 30px;
 	background-color: $contact-bg-colour;
-
-	.contact-text {
-		padding: 20px;
-		margin: 0;
-	}
 	
 	.contact-links {
-		display: flex;
-		flex-wrap: wrap;
-	
-		a {
-			margin: 0;
-			padding: 1%;
-		}
-
 		a:hover {
 			color: $links-hover;
-		}
-	
-		img {
-			width: 40px;
-			height: 40px;
-			margin: 10px;
-		}
-	
-		div{
-			display: flex;
-			align-items: center;
 		}
 	}
 }
 
-
-footer div {
+footer {
 	color: $pop-colour;
 	background-color: $nav-bg-colour;
-	padding-left: 15px;
-	padding-top: 15px;
-	padding-bottom: 15px;
 }
