@@ -9,7 +9,7 @@ $links-hover: #2fcaca;
 $highlight-text-colour: #cfbeff;
 $header-font: 'Poppins', sans-serif;
 $main-font: 'Figtree', monospace;
-$tertiary-font: 'Fira Code', monospace;
+$code-font: 'Fira Code', monospace;
 
 //mixins
 @mixin headingStyles($mLeft, $mBot) {
@@ -37,7 +37,7 @@ body {
 }
 
 nav {
-	font-family: $tertiary-font;
+	font-family: $header-font;
 	background-color: $bg-colour;
 	display: flex;
 	justify-content: space-between;
@@ -85,12 +85,11 @@ header {
 		h1 {
 			font-family: $header-font;
 			font-size: 10rem;
-			margin: 10rem 0 ;
 			font-weight: 400;
 		}
 
 		h2 {
-			font-family: $tertiary-font;
+			font-family: $code-font;
 			font-weight: normal;
 			font-size: 2rem;
 			text-transform: lowercase;
