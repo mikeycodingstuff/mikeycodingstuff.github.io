@@ -4,11 +4,10 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: "Figtree", monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  font-weight: 300;
   background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);
 }
 
@@ -52,18 +51,20 @@ a {
 }
 
 header {
-  margin-top: 70px;
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 header div {
-  color: #50129b;
+  color: #470c8f;
+  margin: 0 1rem;
 }
 header div h1 {
   font-family: "Poppins", sans-serif;
   font-size: 10rem;
   font-weight: 400;
+  margin: 0;
 }
 header div h2 {
   font-family: "Fira Code", monospace;
@@ -71,7 +72,26 @@ header div h2 {
   font-size: 2rem;
   text-transform: lowercase;
 }
+header div h2:before {
+  content: ">";
+}
+header div h2:after {
+  content: "_";
+  opacity: 0;
+  animation: blink 1.2s step-end infinite;
+}
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 section {
   padding-left: 12.5%;
   padding-right: 12.5%;
@@ -82,7 +102,7 @@ section {
   font-size: 2rem;
 }
 .nav-name a {
-  color: #50129b;
+  color: #470c8f;
   white-space: nowrap;
 }
 
@@ -211,7 +231,7 @@ p {
 }
 
 footer div {
-  color: #50129b;
+  color: #470c8f;
   background-color: #ffffff;
   padding-left: 15px;
   padding-top: 15px;
@@ -240,20 +260,17 @@ footer div {
   }
 }
 @media screen and (max-width: 900px) {
-  h1 {
-    font-weight: normal;
-    font-size: 5rem;
-    text-align: center;
-    margin: 0;
-  }
   .nav-name {
     display: none;
   }
-  .tagline {
-    font-weight: normal;
-    font-size: 1.5rem;
+  header div {
     text-align: center;
-    padding: 5%;
+  }
+  header div h1 {
+    font-size: 4.5rem;
+  }
+  header div h2 {
+    font-size: 1.2rem;
   }
   .about {
     flex-direction: column-reverse;
@@ -277,23 +294,11 @@ footer div {
   .about .about-text {
     margin: 5%;
   }
-  header {
-    display: flex;
-    align-items: center;
-  }
-  header div {
-    float: none;
-    width: 100%;
-    height: 55%;
-  }
   nav {
     justify-content: center;
   }
   nav .links {
     font-size: 1.3rem;
-  }
-  a {
-    margin: 5%;
   }
   section {
     width: 100%;
