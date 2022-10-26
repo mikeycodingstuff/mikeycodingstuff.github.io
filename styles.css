@@ -17,7 +17,7 @@ body {
 
 nav {
   font-family: "Poppins", sans-serif;
-  background-color: #ffffff;
+  background-color: #f9fefe;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,19 +77,13 @@ header div h2:before {
 }
 header div h2:after {
   content: "_";
-  opacity: 0;
+  opacity: 1;
   animation: blink 1.2s step-end infinite;
 }
 
 @keyframes blink {
-  0% {
-    opacity: 1;
-  }
   50% {
     opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 section {
@@ -232,7 +226,7 @@ p {
 
 footer div {
   color: #470c8f;
-  background-color: #ffffff;
+  background-color: #f9fefe;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 15px;

@@ -1,5 +1,5 @@
 //variables
-$bg-colour: #ffffff;
+$bg-colour: #f9fefe;
 $nav-hover-colour: #c99feb;
 $pop-colour: #470c8f;
 $contact-bg-colour: rgba(255, 255, 255, 0.6);
@@ -100,32 +100,15 @@ header {
 
 		h2:after {
 			content: '_';
-			opacity: 0;
+			opacity: 1;
 			animation: blink 1.2s step-end infinite;
 		}
 	}
-	
-	// div span {
-	// 	transition: background-color 0.5s, color 0.5s;
-	// }
-
-	// div span:hover {
-	// 	background-color: rgba(250, 250, 250, 0.5);
-	// 	color: $pop-colour;
-	// }
 }
 
 @keyframes blink {
-	0% {
-		opacity: 1;
-	}
-
 	50% {
 		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
 	}
 }
 
