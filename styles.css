@@ -55,8 +55,6 @@ a {
 
 header {
   margin-top: 70px;
-  background-image: url("header-background.jpg");
-  background-size: cover;
   height: 100vh;
 }
 header .header-text {
