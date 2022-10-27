@@ -11,12 +11,8 @@ $highlight-transition: color 0.4s;
 $main-font: 'Poppins', sans-serif;
 $code-font: 'Fira Code', monospace;
 
-html {
-	font-family: $main-font;
-}
-
 body {
-	background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);	
+	background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);
 }
 
 ::selection {
@@ -117,9 +113,9 @@ nav {
 	}
 }
 
-#about, #portfolio, #contact {
-	scroll-margin-top: 5.2rem;
-}
+// #about, #portfolio, #contact {
+// 	scroll-margin-top: 5.2rem;
+// }
 
 header {
 	
@@ -148,7 +144,7 @@ header {
 	
 }
 
-.hero {
+.grid {
 	display: grid;
 	grid-template-rows: 5fr 1fr;
 }
@@ -161,7 +157,6 @@ header {
 .arrow-container:hover {
 	.down-arrow {
 		border-color: $nav-hover-colour;
-		transition: border-color 0.4s;
 	}
 	cursor: pointer;
 }
@@ -174,18 +169,18 @@ header {
 	transform: rotate(45deg);
 }
 
-h3 {
+.section-title {
 	font-family: $main-font;
+	color: $pop-colour;
+	font-weight: 400;
 }
 
 h4 {
 	font-family: $main-font;
 }
 
-.about {
-	.about-text {
-		background-color: $about-bg-colour;
-	}
+.about-text {
+	background-color: $about-bg-colour;
 }
 
 .project {

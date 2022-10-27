@@ -32,8 +32,7 @@
 	</div>
 </nav>
 
-
-<div class="container hero vh-100">
+<div class="container grid vh-100">
 	<header class="d-flex align-items-center justify-content-center">
 		<div>
 			<h1 class="hidden">Hi,<br><span>I'm Mikey!</span></h1>
@@ -47,29 +46,36 @@
 	</div>
 </div>
 
-<div class="container">
-	<section class="about">
+<section class="container grid vh-100" id="about">
+	<div class="d-flex align-items-center justify-content-center">
 		<div>
-			<h3 class="about-heading" id="about">About Me</h3>
-			<div class="about-text">
-				<p>I'm Mikey, an aspiring developer!</p>
-				<p>I have recently graduated from a full stack development course at iO Academy.</p>
-				<p>Since discovering coding I have loved learning more and more about it and applying this in practice to develop my abilities.</p>
-				<p>After finishing my Bachelor's and Master's in Philosophy I was unsure what I wanted to do in life; now I am really excited to be starting a career in development!</p>
-				<p>I have found that a lot of the skills I have gained and developed through studying philosophy translate well into a coding environment.
+			<h3 class="display-1 mb-3 section-title">About Me</h3>
+			<div class="about-text p-4">
+				<p class="lead">I'm Mikey, an aspiring developer!</p>
+				<p class="lead">I have recently graduated from a full stack development course at iO Academy.</p>
+				<p class="lead">Since discovering coding I have loved learning more and more about it and applying this in practice to develop my abilities.</p>
+				<p class="lead">After finishing my Bachelor's and Master's in Philosophy I was unsure what I wanted to do in life; now I am really excited to be starting a career in development!</p>
+				<p class="lead">I have found that a lot of the skills I have gained and developed through studying philosophy translate well into a coding environment.
 					Also, many concepts I have studied in philosophy such as formal logic, or syntax and semantics are directly applicable to programming,
 					which has been fascinating to learn!</p>
-				</div>
 			</div>
-		</section>
-		
+		</div>
+	</div>
+	<div class="d-flex align-items-center justify-content-center">
+		<a class="arrow-container d-flex align-items-center justify-content-center" href="#portfolio">
+			<span class="hidden down-arrow"></span>
+		</a>
+	</div>
+</section>
+
+<div class="container">
 		<section>
-			<h3 class="portfolio-heading" id="portfolio">Portfolio</h3>
+			<h3 class="display-1 section-title" id="portfolio">Portfolio</h3>
 			<div class="projects-container">
 				<div class="project">
 					<div>
 						<h4>Collector's App</h4>
-						<img src="project-imgs/collection.png" alt="Collection app project">
+						<img src="project-imgs/collection.png" class="img-fluid" alt="Collection app project">
 						<p>An app built in PHP that displays a collection of albums from an SQL database.</p>
 					<p>Information about each album is displayed, and users can add a new album to the collection, and delete any album from the collection.</p>
 					<p>User inputs are sanitised and validated, making use of a custom regular expression.</p>
@@ -84,7 +90,7 @@
 			<div class="project">
 				<div>
 					<h4>Film Quiz App</h4>
-					<img src="project-imgs/quotlefish.png" alt="Film quiz app">
+					<img src="project-imgs/quotlefish.png" class="img-fluid" alt="Film quiz app">
 					<p>A film quiz game built in JavaScript, consuming a pre-built API with film data.</p>
 					<p>Once the game starts the player has 30 seconds to attempt to guess as many quotes as they can.</p>
 					<p>A score counter displays the correct guesses with a visual indicator when the player reaches a multiple of 5.</p>
@@ -99,7 +105,7 @@
 			<div class="project">
 				<div>
 					<h4>React Email Client</h4>
-					<img src="project-imgs/seamail.png" alt="Email client built using React">
+					<img src="project-imgs/seamail.png" class="img-fluid" alt="Email client built using React">
 					<p>An email client built in React consuming a pre-built API to fit a supplied design.</p>
 					<p>Displays the user's inbox as well as sent emails.</p>
 					<p>Email list shows a preview of all emails. The user can select a preview to open the complete email.</p>
@@ -114,7 +120,7 @@
 			<div class="project">
 				<div>
 					<h4>OOP PHP listing app</h4>
-					<img src="project-imgs/dunkin-bisquids.png" alt="OOP PHP listing app">
+					<img src="project-imgs/dunkin-bisquids.png" class="img-fluid" alt="OOP PHP listing app">
 					<p>An object-oriented PHP project, styled with bootstrap, that fetches and displays a list of biscuits from a MySQL database.</p>
 					<p>We used the hydrator entity pattern to populate the app with data and a viewhelper to display it on the front end</p>
 					<p>We managed namespacing and autoloading using Composer and attempted to follow SOLID principles where possible.</p>
@@ -129,7 +135,7 @@
 			<div class="project">
 				<div>
 					<h4>Academy Application Portal</h4>
-					<img src="project-imgs/academy-portal.png" alt="Academy Application Portal">
+					<img src="project-imgs/academy-portal.png" class="img-fluid" alt="Academy Application Portal">
 					<p>We undertook some new feature work and bug fixes on a legacy codebase, a student portal system.</p>
 					<p>We added functionality to add/remove trainers and to link trainers to courses.</p>
 					<p>Our work involved validation, sanitisation and unit testing within a slim MVC PHP framework with a MySQL database.</p>
@@ -142,9 +148,11 @@
 			</div>
 		</div>
 	</section>
-		
+</div>
+
+<div class="container">		
 	<section class="contact">
-		<h3 class="contact-heading" id="contact">Contact</h3>
+		<h3 class="display-1 section-title" id="contact">Contact</h3>
 		<div class="contact-container">
 			<p class="contact-text">The best way to contact me is via e-mail, however you can also reach me via the links below</p>
 			<div class="contact-links">
@@ -171,7 +179,6 @@
 			</div>
 		</div>
 	</section>
-
 </div>
 
 <footer>
