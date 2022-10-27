@@ -52,6 +52,7 @@ header div {
 }
 header div h1 {
   font-family: "Poppins", sans-serif;
+  font-size: 8rem;
 }
 header div h2 {
   font-family: "Fira Code", monospace;
