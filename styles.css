@@ -15,13 +15,51 @@ body {
     opacity: 0;
     filter: blur(0);
     transform: translateY(-50%);
-    transition: all 1s;
+    transition: opacity 1s, filter 1s, transform 1s;
   }
   #tagline.hidden {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
     transition-delay: 1s;
+  }
+  header div h2:after {
+    animation: blink 1.2s step-end infinite;
+  }
+  .down-arrow {
+    animation: bounce 2s infinite;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
+    10% {
+      transform: scale(1.1, 0.8) translateY(0) rotate(45deg);
+    }
+    30% {
+      transform: scale(0.8, 1.2) translateY(-2.5rem) rotate(45deg);
+    }
+    40% {
+      transform: scale(1.05, 0.95) translateY(0) rotate(45deg);
+    }
+    55% {
+      transform: scale(0.9, 1.1) translateY(-1rem) rotate(45deg);
+    }
+    70% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
+    80% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
+    100% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
   }
 }
 .show {
@@ -88,7 +126,6 @@ header div h2:before {
 header div h2:after {
   content: "_";
   opacity: 1;
-  animation: blink 1.2s step-end infinite;
 }
 
 .hero {
@@ -96,47 +133,27 @@ header div h2:after {
   grid-template-rows: 5fr 1fr;
 }
 
-.down-arrow {
-  width: 30px;
-  height: 30px;
-  border: solid black;
-  border-width: 0 0.3rem 0.3rem 0;
-  transform: rotate(45deg);
-  animation: bounce 2s infinite;
-  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+.arrow-container {
+  width: 6rem;
+  height: 6rem;
 }
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
+.arrow-container:hover {
+  cursor: pointer;
 }
-@keyframes bounce {
-  0% {
-    transform: scale(1, 1) translateY(0) rotate(45deg);
-  }
-  10% {
-    transform: scale(1.1, 0.8) translateY(0) rotate(45deg);
-  }
-  30% {
-    transform: scale(0.8, 1.2) translateY(-2.5rem) rotate(45deg);
-  }
-  40% {
-    transform: scale(1.05, 0.95) translateY(0) rotate(45deg);
-  }
-  55% {
-    transform: scale(0.9, 1.1) translateY(-1rem) rotate(45deg);
-  }
-  70% {
-    transform: scale(1, 1) translateY(0) rotate(45deg);
-  }
-  80% {
-    transform: scale(1, 1) translateY(0) rotate(45deg);
-  }
-  100% {
-    transform: scale(1, 1) translateY(0) rotate(45deg);
-  }
+.arrow-container:hover .down-arrow {
+  border-color: #c99feb;
+  transition: border-color 0.4s;
 }
+
+.down-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid #470c8f;
+  border-width: 0 0.3rem 0.3rem 0;
+  transform: rotate(45deg);
+}
+
 h3 {
   font-family: "Poppins", sans-serif;
 }

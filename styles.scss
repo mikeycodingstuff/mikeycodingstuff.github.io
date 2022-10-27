@@ -28,7 +28,7 @@ body {
 		opacity: 0;
 		filter: blur(0);
 		transform: translateY(-50%);
-		transition: all 1s;
+		transition: opacity 1s, filter 1s, transform 1s;
 	}
 
 	#tagline.hidden {
@@ -36,6 +36,36 @@ body {
 		filter: blur(0);
 		transform: translateX(0);
 		transition-delay: 1s;
+	}
+
+	header {
+		div {
+			h2:after {
+				animation: blink 1.2s step-end infinite;
+			}
+		}
+	}
+
+	.down-arrow {
+		animation: bounce 2s infinite;
+		animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+	}
+
+	@keyframes blink {
+		50% {
+			opacity: 0;
+		}
+	}
+	
+	@keyframes bounce {
+		0%   { transform: scale(1,1) translateY(0) rotate(45deg); }
+		10%  { transform: scale(1.1,.8) translateY(0) rotate(45deg); }
+		30%  { transform: scale(.8,1.2) translateY(-2.5rem) rotate(45deg); }
+		40%  { transform: scale(1.05,.95) translateY(0) rotate(45deg); }
+		55%  { transform: scale(.9,1.1) translateY(-1rem) rotate(45deg); }
+		70%  { transform: scale(1,1) translateY(0) rotate(45deg); }
+		80%  { transform: scale(1,1) translateY(0) rotate(45deg); }
+		100% { transform: scale(1,1) translateY(0) rotate(45deg); }
 	}
 }
 
@@ -87,8 +117,6 @@ nav {
 	}
 }
 
-
-
 #about, #portfolio, #contact {
 	scroll-margin-top: 5rem;
 }
@@ -115,7 +143,6 @@ header {
 		h2:after {
 			content: '_';
 			opacity: 1;
-			animation: blink 1.2s step-end infinite;
 		}
 	}
 	
@@ -126,31 +153,25 @@ header {
 	grid-template-rows: 5fr 1fr;
 }
 
+.arrow-container {
+	width: 6rem;
+	height: 6rem;
+}
+
+.arrow-container:hover {
+	.down-arrow {
+		border-color: $nav-hover-colour;
+		transition: border-color 0.4s;
+	}
+	cursor: pointer;
+}
+
 .down-arrow {
-	width: 30px;
-	height: 30px;
-	border: solid black;
+	width: 2.5rem;
+	height: 2.5rem;
+	border: solid $pop-colour;
 	border-width: 0 0.3rem 0.3rem 0;
 	transform: rotate(45deg);
-	animation: bounce 2s infinite;
-	animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
-}
-
-@keyframes blink {
-	50% {
-		opacity: 0;
-	}
-}
-
-@keyframes bounce {
-	0%   { transform: scale(1,1) translateY(0) rotate(45deg); }
-	10%  { transform: scale(1.1,.8) translateY(0) rotate(45deg); }
-	30%  { transform: scale(.8,1.2) translateY(-2.5rem) rotate(45deg); }
-	40%  { transform: scale(1.05,.95) translateY(0) rotate(45deg); }
-	55%  { transform: scale(.9,1.1) translateY(-1rem) rotate(45deg); }
-	70%  { transform: scale(1,1) translateY(0) rotate(45deg); }
-	80%  { transform: scale(1,1) translateY(0) rotate(45deg); }
-	100% { transform: scale(1,1) translateY(0) rotate(45deg); }
 }
 
 h3 {
