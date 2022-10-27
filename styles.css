@@ -10,6 +10,32 @@ body {
   background: #cfbeff;
 }
 
+.hidden {
+  opacity: 0;
+  filter: blur(0);
+  transform: translateY(-30%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+#tagline.hidden {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transition-delay: 1s;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.4s;
+}
+
 nav {
   font-family: "Fira Code", monospace;
   background-color: #f9fefe;
@@ -35,12 +61,6 @@ nav .cv-btn {
 nav .cv-btn:hover {
   background-color: #c99feb;
   color: #470c8f;
-}
-
-a {
-  text-decoration: none;
-  color: #000000;
-  transition: color 0.4s;
 }
 
 #about, #portfolio, #contact {

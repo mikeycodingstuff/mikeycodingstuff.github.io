@@ -1,9 +1,9 @@
 const tagline = document.querySelector('#tagline');
-const animatedElements = document.querySelectorAll('.animate');
+const hiddenElements = document.querySelectorAll('.hidden');
 
 let i = 0;
 let taglineTxt = 'Full-Stack-Developer';
-const speed = 70;
+const speed = 60;
 
 const typeWriter = () => {
     taglineTxt = 'Full-Stack-Developer';
@@ -21,13 +21,14 @@ const resetTypeWriter = () => {
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
+        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
             if (entry.target.id == 'tagline') {
-                typeWriter();
+                setTimeout(typeWriter, 2000);
             }
         } else {
-            entry.target.classList.add('show');
+            entry.target.classList.remove('show');
             if (entry.target.id == 'tagline') { 
                 resetTypeWriter();
             }
@@ -35,4 +36,4 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-animatedElements.forEach((el) => observer.observe(el));
+hiddenElements.forEach((el) => observer.observe(el));
