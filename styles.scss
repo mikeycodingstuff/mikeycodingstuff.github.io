@@ -22,11 +22,20 @@ body {
 	background: $highlight-text-colour;
 }
 
-.hidden {
-	opacity: 0;
-	filter: blur(0);
-	transform: translateY(-30%);
-	transition: all 1s;
+@media (prefers-reduced-motion: no-preference) {
+	.hidden {
+		opacity: 0;
+		filter: blur(0);
+		transform: translateY(-30%);
+		transition: all 1s;
+	}
+
+	#tagline.hidden {
+		opacity: 1;
+		filter: blur(0);
+		transform: translateX(0);
+		transition-delay: 1s;
+	}
 }
 
 .show {
@@ -34,27 +43,6 @@ body {
 	filter: blur(0);
 	transform: translateX(0);
 }
-
-#tagline.hidden {
-	opacity: 1;
-	filter: blur(0);
-	transform: translateX(0);
-	transition-delay: 1s;
-}
-
-// @keyframes showElement {
-// 	0% {
-// 		opacity: 0;
-// 		filter: blur(15px);
-// 		transform: translateX(-10%);
-// 	}
-
-// 	100% {
-// 		opacity: 1;
-// 		filter: blur(0);
-// 		transform: translateX(0);
-// 	}
-// }
 
 a {
 	text-decoration: none;
@@ -68,6 +56,7 @@ nav {
 	box-shadow: 0 1px 4px rgb(0 0 0 / 22%);
 	position: fixed;
 	width: 100%;
+	z-index: 1;
 
 	.nav-link {
 		font-size: 1.5rem;
@@ -125,6 +114,12 @@ header {
 			animation: blink 1.2s step-end infinite;
 		}
 	}
+	
+}
+
+.container.hero {
+	display: grid;
+	grid-template-rows: 5fr 1fr;
 }
 
 @keyframes blink {
@@ -173,4 +168,14 @@ h4 {
 footer {
 	color: $pop-colour;
 	background-color: $nav-bg-colour;
+}
+
+@media screen and (max-width: 992px) {
+	header {
+		div {
+			h1 {
+				font-size: 6rem;
+			}
+		}
+	}
 }
