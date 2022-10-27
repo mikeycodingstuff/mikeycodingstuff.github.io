@@ -14,7 +14,7 @@ body {
   .hidden {
     opacity: 0;
     filter: blur(0);
-    transform: translateY(-30%);
+    transform: translateY(-50%);
     transition: all 1s;
   }
   #tagline.hidden {
@@ -54,6 +54,7 @@ nav .nav-logo {
 }
 nav .nav-link:hover, nav .nav-logo:hover {
   color: #c99feb;
+  transition: color 0.4s;
 }
 nav .cv-btn {
   background-color: #470c8f;
@@ -62,6 +63,8 @@ nav .cv-btn {
 nav .cv-btn:hover {
   background-color: #c99feb;
   color: #470c8f;
+  transition: color 0.4s;
+  transition: background-color 0.4s;
 }
 
 #about, #portfolio, #contact {
@@ -88,14 +91,50 @@ header div h2:after {
   animation: blink 1.2s step-end infinite;
 }
 
-.container.hero {
+.hero {
   display: grid;
   grid-template-rows: 5fr 1fr;
+}
+
+.down-arrow {
+  width: 30px;
+  height: 30px;
+  border: solid black;
+  border-width: 0 0.3rem 0.3rem 0;
+  transform: rotate(45deg);
+  animation: bounce 2s infinite;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
 }
 
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0) rotate(45deg);
+  }
+  10% {
+    transform: scale(1.1, 0.8) translateY(0) rotate(45deg);
+  }
+  30% {
+    transform: scale(0.8, 1.2) translateY(-2.5rem) rotate(45deg);
+  }
+  40% {
+    transform: scale(1.05, 0.95) translateY(0) rotate(45deg);
+  }
+  55% {
+    transform: scale(0.9, 1.1) translateY(-1rem) rotate(45deg);
+  }
+  70% {
+    transform: scale(1, 1) translateY(0) rotate(45deg);
+  }
+  80% {
+    transform: scale(1, 1) translateY(0) rotate(45deg);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0) rotate(45deg);
   }
 }
 h3 {
