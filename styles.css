@@ -14,9 +14,6 @@ body {
     transition: opacity 1s, filter 1s, transform 1s;
   }
   #tagline.hidden {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
     transition-delay: 1s;
   }
   header div h2:after {
@@ -127,6 +124,11 @@ header div h2:after {
 .grid {
   display: grid;
   grid-template-rows: 4fr 1fr;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
 }
 
 .arrow-container {

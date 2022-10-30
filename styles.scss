@@ -28,9 +28,6 @@ body {
 	}
 
 	#tagline.hidden {
-		opacity: 1;
-		filter: blur(0);
-		transform: translateX(0);
 		transition-delay: 1s;
 	}
 
@@ -147,6 +144,11 @@ header {
 .grid {
 	display: grid;
 	grid-template-rows: 4fr 1fr;
+}
+
+.about-grid {
+	display: grid;
+	grid-template-rows: 2fr 1fr;
 }
 
 .arrow-container {
