@@ -101,6 +101,10 @@ nav .cv-btn:hover {
   transition: background-color 0.4s;
 }
 
+#about, #portfolio, #contact {
+  scroll-margin-top: 5.2rem;
+}
+
 header div {
   color: #470c8f;
 }
@@ -122,7 +126,7 @@ header div h2:after {
 
 .grid {
   display: grid;
-  grid-template-rows: 5fr 1fr;
+  grid-template-rows: 4fr 1fr;
 }
 
 .arrow-container {

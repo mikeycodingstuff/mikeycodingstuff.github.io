@@ -113,9 +113,9 @@ nav {
 	}
 }
 
-// #about, #portfolio, #contact {
-// 	scroll-margin-top: 5.2rem;
-// }
+#about, #portfolio, #contact {
+	scroll-margin-top: 5.2rem;
+}
 
 header {
 	
@@ -146,7 +146,7 @@ header {
 
 .grid {
 	display: grid;
-	grid-template-rows: 5fr 1fr;
+	grid-template-rows: 4fr 1fr;
 }
 
 .arrow-container {
