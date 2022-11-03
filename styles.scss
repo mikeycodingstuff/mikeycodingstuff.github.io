@@ -264,10 +264,16 @@ h4 {
 .contact-content {
 	background-color: $contact-bg-colour;
 	
-	.contact-links {
-		a:hover {
-			color: $links-hover;
-		}
+	a:hover {
+		color: $links-hover;
+	}
+
+	img {
+		width: 3rem;
+	}
+
+	p {
+		font-family: $code-font;
 	}
 }
 
