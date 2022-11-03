@@ -9,6 +9,7 @@ $highlight-text-colour: #cfbeff;
 $highlight-transition: color 0.4s;
 $main-font: 'Poppins', sans-serif;
 $code-font: 'Fira Code', monospace;
+$moving-transition: opacity 1.2s, filter 1.2s, transform 1.2s;
 
 body {
 	background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);
@@ -21,21 +22,33 @@ body {
 @media (prefers-reduced-motion: no-preference) {
 	.hidden {
 		opacity: 0;
-		filter: blur(0);
-		transform: translateX(-20%);
-		transition: opacity 1.2s, filter 1.2s, transform 1.2s;
+		filter: blur(0.2rem);
+		transition: opacity 1.2s, filter 1.2s;
 	}
 
 	#tagline.hidden {
-		transform: translateX(0%);
 		transition-delay: 1s;
 	}
 
 	.portfolio-section {
 		.hidden {
-		transform: translateX(0%);
-		transition: opacity 1.6s;
+			transition: opacity 1.6s, filter 1.2s;
 		}
+	}
+
+	.greeting.hidden {
+		transform: translateY(-100%);
+		transition: $moving-transition;
+	}
+
+	.about-content.hidden {
+		transform: translateX(-20%);
+		transition: $moving-transition;
+	}
+
+	.contact-section.hidden {
+		transform: translateX(20%);
+		transition: $moving-transition;
 	}
 
 	header {
@@ -75,6 +88,17 @@ body {
 	transform: translateX(0);
 }
 
+.contact-section.show {
+	transform: translateX(0%);
+}
+
+.greeting.show {
+	transform: translateY(0%);
+}
+
+.about-content.show {
+	transform: translateX(0%);
+}
 a {
 	text-decoration: none;
 	color: #000000;
@@ -237,7 +261,7 @@ h4 {
 	display: inline-block
 }
 
-.contact-container {
+.contact-content {
 	background-color: $contact-bg-colour;
 	
 	.contact-links {
