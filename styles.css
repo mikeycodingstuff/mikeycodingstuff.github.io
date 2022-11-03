@@ -17,6 +17,10 @@ body {
     transform: translateX(0%);
     transition-delay: 1s;
   }
+  .project.hidden {
+    transform: translateX(0%);
+    transition: opacity 1.6s;
+  }
   header div h2:after {
     animation: blink 1.2s step-end infinite;
   }
@@ -185,7 +189,7 @@ h4 {
   color: #470c8f;
 }
 .project .card-body p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 .project .project-footer {
   background-color: transparent;
