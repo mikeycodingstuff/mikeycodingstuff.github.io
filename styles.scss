@@ -284,8 +284,15 @@ h4 {
 }
 
 footer {
-	color: $pop-colour;
 	background-color: $nav-bg-colour;
+	a {
+		color: $pop-colour;
+		font-family: $main-font;
+	}
+	
+	a:hover {
+		color: $links-hover;
+	}
 }
 
 @media screen and (max-width: 992px) {
