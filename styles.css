@@ -179,19 +179,33 @@ h4 {
 
 .project {
   background-color: rgba(255, 255, 255, 0.6);
+  font-family: "Fira Code", monospace;
 }
-.project a:hover {
-  color: #2fcaca;
+.project .project-title {
+  color: #470c8f;
 }
-.project .project-links a {
-  text-decoration: underline;
+.project .card-body p {
+  font-size: 1.4rem;
+}
+.project .project-footer {
+  background-color: transparent;
+}
+.project .project-footer .project-link {
+  color: #470c8f;
+}
+.project .project-footer .project-link:hover {
+  color: #c99feb;
+}
+
+.card {
+  display: inline-block;
 }
 
 .contact-container {
   background-color: rgba(255, 255, 255, 0.6);
 }
 .contact-container .contact-links a:hover {
-  color: #2fcaca;
+  color: #c99feb;
 }
 
 footer {
@@ -211,6 +225,11 @@ footer {
 }
 @media screen and (max-width: 992px) {
   .about-text p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .project .card-body p {
     font-size: 1rem;
   }
 }
