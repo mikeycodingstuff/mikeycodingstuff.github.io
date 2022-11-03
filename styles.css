@@ -245,8 +245,14 @@ h4 {
 }
 
 footer {
-  color: #470c8f;
   background-color: #f9fefe;
+}
+footer a {
+  color: #470c8f;
+  font-family: "Poppins", sans-serif;
+}
+footer a:hover {
+  color: #c99feb;
 }
 
 @media screen and (max-width: 992px) and (prefers-reduced-motion: no-preference) {
