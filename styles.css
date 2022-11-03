@@ -229,8 +229,14 @@ h4 {
 .contact-content {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.contact-content .contact-links a:hover {
+.contact-content a:hover {
   color: #c99feb;
+}
+.contact-content img {
+  width: 3rem;
+}
+.contact-content p {
+  font-family: "Fira Code", monospace;
 }
 
 footer {
