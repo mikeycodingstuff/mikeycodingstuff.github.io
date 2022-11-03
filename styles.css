@@ -232,8 +232,13 @@ h4 {
 .contact-content a:hover {
   color: #c99feb;
 }
-.contact-content img {
+.contact-content a:hover svg {
+  fill: #c99feb;
+  transition: fill 0.4s;
+}
+.contact-content svg {
   width: 3rem;
+  transition: fill 0.4s;
 }
 .contact-content p {
   font-family: "Fira Code", monospace;
@@ -245,7 +250,10 @@ footer {
 }
 
 @media screen and (max-width: 992px) and (prefers-reduced-motion: no-preference) {
-  .hidden {
+  .about-content.hidden {
+    transform: translateX(0%);
+  }
+  .contact-section.hidden {
     transform: translateX(0%);
   }
 }

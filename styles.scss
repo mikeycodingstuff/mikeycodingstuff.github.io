@@ -266,10 +266,16 @@ h4 {
 	
 	a:hover {
 		color: $links-hover;
+
+		svg {
+			fill: $links-hover;
+			transition: fill 0.4s;
+		}
 	}
 
-	img {
+	svg {
 		width: 3rem;
+		transition: fill 0.4s;
 	}
 
 	p {
@@ -285,8 +291,12 @@ footer {
 @media screen and (max-width: 992px) {
 
 	@media (prefers-reduced-motion: no-preference) {
-		.hidden {
-			transform: translateX(-0%);
+		.about-content.hidden {
+			transform: translateX(0%);
+		}
+	
+		.contact-section.hidden {
+			transform: translateX(0%);
 		}
 	}
 
