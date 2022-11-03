@@ -31,9 +31,11 @@ body {
 		transition-delay: 1s;
 	}
 
-	.project.hidden {
+	.portfolio-section {
+		.hidden {
 		transform: translateX(0%);
 		transition: opacity 1.6s;
+		}
 	}
 
 	header {
@@ -270,6 +272,11 @@ footer {
 		p {
 			font-size: 1rem;
 		}
+	}
+
+	.about-grid {
+		display: grid;
+		grid-template-rows: 2fr 0fr;
 	}
 
 	.project {
