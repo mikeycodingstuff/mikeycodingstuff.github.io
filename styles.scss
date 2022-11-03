@@ -62,6 +62,13 @@ body {
 	.down-arrow {
 		animation: bounce 2s infinite;
 		animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+		transition-delay: 1s;
+	}
+
+	.grid {
+		.down-arrow {
+			transition-delay: 2.5s;
+		}
 	}
 
 	@keyframes blink {
@@ -289,7 +296,7 @@ footer {
 		color: $pop-colour;
 		font-family: $main-font;
 	}
-	
+
 	a:hover {
 		color: $links-hover;
 	}
