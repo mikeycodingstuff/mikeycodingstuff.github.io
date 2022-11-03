@@ -17,7 +17,7 @@ body {
     transform: translateX(0%);
     transition-delay: 1s;
   }
-  .project.hidden {
+  .portfolio-section .hidden {
     transform: translateX(0%);
     transition: opacity 1.6s;
   }
@@ -230,6 +230,12 @@ footer {
 @media screen and (max-width: 992px) {
   .about-text p {
     font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .about-grid {
+    display: grid;
+    grid-template-rows: 2fr 0fr;
   }
 }
 @media screen and (max-width: 992px) {
