@@ -1,16 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  margin: 0;
-  font-family: "Figtree", monospace;
-  font-weight: 300;
-  background: #cfbeff;
   background: linear-gradient(0deg, #cfbeff 0%, #c2f2f2 73%, #defbfb 100%);
 }
 
@@ -18,323 +6,286 @@ body {
   background: #cfbeff;
 }
 
-nav {
-  font-family: "Courier New", monospace;
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 70px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
-  z-index: 1;
+@media (prefers-reduced-motion: no-preference) {
+  .hidden {
+    opacity: 0;
+    filter: blur(0.2rem);
+    transition: opacity 1.2s, filter 1.2s;
+  }
+  #tagline.hidden {
+    transition-delay: 1s;
+  }
+  .portfolio-section .hidden {
+    transition: opacity 1.6s, filter 1.2s;
+  }
+  .greeting.hidden {
+    transform: translateY(-100%);
+    transition: opacity 1.2s, filter 1.2s, transform 1.2s;
+  }
+  .about-content.hidden {
+    transform: translateX(-20%);
+    transition: opacity 1.2s, filter 1.2s, transform 1.2s;
+  }
+  .contact-section.hidden {
+    transform: translateX(20%);
+    transition: opacity 1.2s, filter 1.2s, transform 1.2s;
+  }
+  header div h2:after {
+    animation: blink 1.2s step-end infinite;
+  }
+  .down-arrow {
+    animation: bounce 2s infinite;
+    animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+    transition-delay: 1s;
+  }
+  .grid .down-arrow {
+    transition-delay: 2.5s;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
+    10% {
+      transform: scale(1.1, 0.8) translateY(0) rotate(45deg);
+    }
+    30% {
+      transform: scale(0.8, 1.2) translateY(-2.5rem) rotate(45deg);
+    }
+    40% {
+      transform: scale(1.05, 0.95) translateY(0) rotate(45deg);
+    }
+    55% {
+      transform: scale(0.9, 1.1) translateY(-1rem) rotate(45deg);
+    }
+    70% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
+    80% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
+    100% {
+      transform: scale(1, 1) translateY(0) rotate(45deg);
+    }
+  }
 }
-nav .links {
-  margin: 15px;
-  font-size: 1.7rem;
-  display: flex;
-  justify-content: center;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
-nav .links a:hover, nav .nav-name a:hover {
-  color: #c99feb;
+
+.contact-section.show {
+  transform: translateX(0%);
+}
+
+.greeting.show {
+  transform: translateY(0%);
+}
+
+.about-content.show {
+  transform: translateX(0%);
 }
 
 a {
   text-decoration: none;
   color: #000000;
-  margin-left: 60px;
-  margin-right: 60px;
-  transition: color 0.25s;
+  transition: color 0.4s;
 }
 
-#top, #about, #portfolio, #contact {
-  scroll-margin-top: 70px;
+nav {
+  font-family: "Fira Code", monospace;
+  background-color: #f9fefe;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
-
-header {
-  margin-top: 70px;
-  background-image: url("header-background.jpg");
-  background-size: cover;
-  height: 100vh;
+nav .nav-link {
+  font-size: 1.5rem;
 }
-header .header-text {
-  float: right;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(149, 148, 152, 0.3);
-  backdrop-filter: blur(10px);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-header .header-text span {
-  transition: background-color 0.5s, color 0.5s;
-}
-header .header-text span:hover {
-  background-color: rgba(250, 250, 250, 0.5);
-  color: #50129b;
-}
-
-section {
-  padding-left: 12.5%;
-  padding-right: 12.5%;
-}
-
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 6rem;
-  margin: 2%;
-  margin-left: 20%;
-}
-
-.nav-name {
-  font-weight: normal;
+nav .nav-logo {
+  color: #470c8f;
   font-size: 2rem;
+  font-weight: bold;
 }
-.nav-name a {
-  color: #50129b;
-  white-space: nowrap;
+nav .nav-link:hover, nav .nav-logo:hover {
+  color: #c99feb;
+  transition: color 0.4s;
+}
+nav .cv-btn {
+  background-color: #470c8f;
+  color: #f9fefe;
+}
+nav .cv-btn:hover {
+  background-color: #c99feb;
+  color: #470c8f;
+  transition: color 0.4s;
+  transition: background-color 0.4s;
 }
 
-.tagline {
-  font-family: "Courier New", monospace;
-  font-weight: normal;
-  font-size: 2rem;
-  margin-left: 20%;
+#about, #portfolio, #contact {
+  scroll-margin-top: 5.2rem;
 }
 
-h3 {
-  font-family: "Roboto", sans-serif;
+header div {
+  color: #470c8f;
+}
+header div h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 8rem;
+}
+header div h2 {
+  font-family: "Fira Code", monospace;
+  text-transform: lowercase;
+}
+header div h2:before {
+  content: ">";
+}
+header div h2:after {
+  content: "_";
+  opacity: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.arrow-container {
+  width: 6rem;
+  height: 6rem;
+}
+
+.arrow-container:hover {
+  cursor: pointer;
+}
+.arrow-container:hover .down-arrow {
+  border-color: #c99feb;
+}
+
+.down-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: solid #470c8f;
+  border-width: 0 0.3rem 0.3rem 0;
+  transform: rotate(45deg);
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  color: #470c8f;
   font-weight: 400;
-  font-size: 4rem;
-  margin: 0;
 }
 
 h4 {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
-  font-size: 2.5em;
-  font-weight: normal;
-  margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-p {
-  font-size: 1.2rem;
-}
-
-.about {
-  display: flex;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-.about div {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.about img {
-  width: 100%;
-  height: auto;
-}
-.about .about-heading {
-  margin-left: 30px;
-  margin-bottom: 10px;
-}
-.about .about-text {
-  padding: 5%;
-  margin: 0;
+.about-text {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.about .mikey-img-div {
-  justify-content: center;
-  padding-left: 10%;
+.about-text p {
+  font-size: 1.5rem;
+  font-family: "Fira Code", monospace;
 }
-
-.portfolio-heading {
-  text-align: center;
+.about-text .about-cv-link {
+  color: #470c8f;
 }
-
-.projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.about-text .about-cv-link:hover {
+  color: #c99feb;
+  transition: color 0.4s;
 }
 
 .project {
-  width: 27.33%;
   background-color: rgba(255, 255, 255, 0.6);
-  margin: 3%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  font-family: "Fira Code", monospace;
 }
-.project img {
-  width: 100%;
-  height: auto;
-  padding: 15px;
+.project .project-title {
+  color: #470c8f;
 }
-.project p {
-  margin: 10px;
+.project .card-body p {
+  font-size: 1.2rem;
 }
-.project a {
-  padding: 4%;
-  margin: 0;
+.project .project-footer {
+  background-color: transparent;
 }
-.project a:hover {
-  color: #2fcaca;
+.project .project-footer .project-link {
+  color: #470c8f;
 }
-.project .project-links {
-  display: flex;
-  justify-content: space-around;
-}
-.project .project-links a {
-  text-decoration: underline;
-  font-size: 1.5rem;
+.project .project-footer .project-link:hover {
+  color: #c99feb;
 }
 
-.contact-heading {
-  margin-left: 30px;
-  margin-bottom: 10px;
+.card {
+  display: inline-block;
 }
 
-.contact-container {
-  margin-bottom: 30px;
+.contact-content {
   background-color: rgba(255, 255, 255, 0.6);
 }
-.contact-container .contact-text {
-  padding: 20px;
-  margin: 0;
+.contact-content a:hover {
+  color: #c99feb;
 }
-.contact-container .contact-links {
-  display: flex;
-  flex-wrap: wrap;
+.contact-content a:hover svg {
+  fill: #c99feb;
+  transition: fill 0.4s;
 }
-.contact-container .contact-links a {
-  margin: 0;
-  padding: 1%;
+.contact-content svg {
+  width: 3rem;
+  transition: fill 0.4s;
 }
-.contact-container .contact-links a:hover {
-  color: #2fcaca;
-}
-.contact-container .contact-links img {
-  width: 40px;
-  height: 40px;
-  margin: 10px;
-}
-.contact-container .contact-links div {
-  display: flex;
-  align-items: center;
+.contact-content p {
+  font-family: "Fira Code", monospace;
 }
 
-footer div {
-  color: #50129b;
-  background-color: #ffffff;
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+footer {
+  background-color: #f9fefe;
+}
+footer a {
+  color: #470c8f;
+  font-family: "Poppins", sans-serif;
+}
+footer a:hover {
+  color: #c99feb;
 }
 
-@media screen and (max-width: 1600px) {
-  section {
-    padding-left: 50px;
-    padding-right: 50px;
+@media screen and (max-width: 992px) and (prefers-reduced-motion: no-preference) {
+  .about-content.hidden {
+    transform: translateX(0%);
+  }
+  .contact-section.hidden {
+    transform: translateX(0%);
   }
 }
-@media screen and (max-width: 1300px) {
-  a {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-  .project {
-    width: 46%;
-    margin: 2%;
-  }
-  .project img {
-    width: 100%;
-    height: auto;
-    padding: 5%;
+@media screen and (max-width: 992px) {
+  header div h1 {
+    font-size: 6rem;
   }
 }
-@media screen and (max-width: 900px) {
-  h1 {
-    font-weight: normal;
-    font-size: 5rem;
-    text-align: center;
-    margin: 0;
+@media screen and (max-width: 992px) {
+  .about-text p {
+    font-size: 1rem;
   }
-  .nav-name {
-    display: none;
+}
+@media screen and (max-width: 992px) {
+  .about-grid {
+    display: grid;
+    grid-template-rows: 2fr 0fr;
   }
-  .tagline {
-    font-weight: normal;
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 5%;
-    margin: 0;
-  }
-  .about {
-    flex-direction: column-reverse;
-    margin-top: 0;
-  }
-  .about .about-heading {
-    margin-left: 0;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .about img {
-    width: 100%;
-    height: auto;
-  }
-  .about div {
-    width: auto;
-  }
-  .about .mikey-img-div {
-    padding: 35px;
-  }
-  .about .about-text {
-    margin: 5%;
-  }
-  header {
-    display: flex;
-    align-items: center;
-  }
-  header .header-text {
-    float: none;
-    width: 100%;
-    height: 55%;
-  }
-  nav {
-    justify-content: center;
-  }
-  nav .links {
-    font-size: 1.3rem;
-  }
-  a {
-    margin: 5%;
-  }
-  section {
-    width: 100%;
-    padding: 0;
-  }
-  .project {
-    width: 90%;
-    margin: 5%;
-  }
-  .project a, .project p {
-    padding: 2%;
-  }
-  .contact-heading {
-    margin-left: 0;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  .contact-container {
-    margin: 5%;
+}
+@media screen and (max-width: 992px) {
+  .project .card-body p {
+    font-size: 1rem;
   }
 }
 
