@@ -220,7 +220,7 @@ h4 {
 	font-family: $main-font;
 }
 
-.about-text {
+.main-text {
 	background-color: $about-bg-colour;
 
 	p {
@@ -228,11 +228,11 @@ h4 {
 		font-family: $code-font;
 	}
 
-	.about-cv-link {
+	.about-cv-link, .github-link{
 		color: $pop-colour;
 	}
 
-	.about-cv-link:hover {
+	.about-cv-link:hover, .github-link:hover{
 		color: $links-hover;
 		transition: $highlight-transition;
 	}
