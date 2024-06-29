@@ -7,7 +7,6 @@ let count = ref(0);
 function increment() {
   count.value++
 }
-
 </script>
 
 <template>
