@@ -1,3 +1,7 @@
+@import 'themes/cafe';
+@import 'themes/dark';
+@import 'themes/light';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
