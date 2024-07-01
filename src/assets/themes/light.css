@@ -1,6 +1,6 @@
-[theme=light] {
-    --bg-primary: #f3eae0;
-    --text: #2c2c2c;
-    --main: #6d54af;
-    --accent: #55b093;
+[theme='light'] {
+  --bg-primary: #f3eae0;
+  --text: #2c2c2c;
+  --main: #6d54af;
+  --accent: #55b093;
 }

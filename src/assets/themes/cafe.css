@@ -1,6 +1,6 @@
-[theme=cafe] {
-    --bg-primary: #ffeed2;
-    --text: #997b6c;
-    --main: #cd7041;
-    --accent: #ff5740;
+[theme='cafe'] {
+  --bg-primary: #ffeed2;
+  --text: #997b6c;
+  --main: #cd7041;
+  --accent: #ff5740;
 }
