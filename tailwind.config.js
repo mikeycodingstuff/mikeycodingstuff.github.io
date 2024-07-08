@@ -9,13 +9,14 @@ export default {
     extend: {
       colors: {
         theme: {
-          main: 'var(--main)',
-          title: 'var(--title)',
-          text: 'var(--text)',
-          accent: 'var(--accent)',
-          muted: 'var(--muted)',
           'bg-primary': 'var(--bg-primary)',
           'bg-secondary': 'var(--bg-secondary)',
+          main: 'var(--main)',
+          accent: 'var(--accent)',
+          'accent-alt': 'var(--accent-alt)',
+          text: 'var(--text)',
+          error: 'var(--error)',
+          'error-alt': 'var(--error-alt)',
         },
       },
     },

@@ -1,8 +1,8 @@
 [theme='dark'] {
-  --bg-primary: #2c2c2c;
-  --bg-secondary: #545454;
   --text: #f3eae0;
   --main: #9d7fec;
   --accent: #7fecc9;
-  --muted: #8c8b8b;
+  --accent-alt: #8c8b8b;
+  --bg-primary: #2c2c2c;
+  --bg-secondary: #545454;
 }

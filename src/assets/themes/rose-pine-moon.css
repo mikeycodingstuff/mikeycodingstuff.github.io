@@ -1,8 +1,10 @@
 [theme='rose-pine-moon'] {
-  --bg-primary: #232136;
-  --bg-secondary: #393552;
+  --bg-primary: #2a273f;
+  --bg-secondary: #211f32;
+  --main: #9ccfd8;
+  --accent: #c4a7e7;
+  --accent-alt: #f6c177;
   --text: #e0def4;
-  --main: #eb6f92;
-  --accent: #ea9a97;
-  --muted: #6e6a86;
+  --error: #eb6f92;
+  --error-alt: #ebbcba;
 }

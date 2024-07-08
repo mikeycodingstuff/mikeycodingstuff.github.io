@@ -9,16 +9,6 @@ const colorMode = useColorMode({
   modes: themes
 });
 
-const switchTheme = () => {
-  if (colorMode.value === 'dark') {
-    colorMode.value = 'light';
-  } else if (colorMode.value === 'light') {
-    colorMode.value = 'rose-pine-moon';
-  } else if (colorMode.value === 'rose-pine-moon') {
-    colorMode.value = 'dark';
-  }
-};
-
 const unKebab = (string) => string.replace(/-/g, ' ');
 </script>
 
@@ -41,15 +31,16 @@ const unKebab = (string) => string.replace(/-/g, ' ');
         color-token="bg-primary"
       />
       <color-swatch bg-class="bg-theme-bg-secondary" color-token="bg-secondary" />
+      <color-swatch bg-class="bg-theme-error" color-token="error" />
+      <color-swatch bg-class="bg-theme-error-alt" color-token="error-alt" />
     </div>
 
     <div>
-      <button
-        @click="switchTheme"
-        class="px-4 py-2 bg-theme-bg-secondary border border-theme-text hover:text-theme-accent hover:border-theme-accent transition-colors duration-300"
-      >
-        Switch Theme
-      </button>
+      <select v-model="colorMode" class="border border-theme-text bg-transparent">
+        <option v-for="(theme, key, index) in themes" :value="theme" :key="index">
+          {{ theme }}
+        </option>
+      </select>
     </div>
   </div>
 </template>
