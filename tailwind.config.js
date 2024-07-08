@@ -13,6 +13,7 @@ export default {
           title: 'var(--title)',
           text: 'var(--text)',
           accent: 'var(--accent)',
+          muted: 'var(--muted)',
           'bg-primary': 'var(--bg-primary)',
           'bg-secondary': 'var(--bg-secondary)',
         },

@@ -1,6 +1,7 @@
 @import 'themes/cafe';
 @import 'themes/dark';
 @import 'themes/light';
+@import 'themes/rose-pine-moon';
 
 @tailwind base;
 @tailwind components;
