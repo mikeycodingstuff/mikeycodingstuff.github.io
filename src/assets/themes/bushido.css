@@ -1,0 +1,10 @@
+[theme='bushido'] {
+  --bg-primary: #242933;
+  --bg-secondary: #1c222d;
+  --main: #ec4c56;
+  --accent: #596172;
+  --accent-alt: #ec4c56;
+  --text: #f6f0e9;
+  --error: #ec4c56;
+  --error-alt: #9b333a;
+}

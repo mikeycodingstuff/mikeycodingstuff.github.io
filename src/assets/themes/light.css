@@ -1,8 +1,10 @@
 [theme='light'] {
   --bg-primary: #f3eae0;
   --bg-secondary: #b5aa9e;
-  --text: #2c2c2c;
   --main: #6d54af;
   --accent: #55b093;
-  --muted: #807b75;
+  --accent-alt: #807b75;
+  --text: #2c2c2c;
+  --error: #b81b2c;
+  --error-alt: #84131f;
 }

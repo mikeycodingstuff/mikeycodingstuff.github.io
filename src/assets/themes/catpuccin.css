@@ -1,0 +1,10 @@
+[theme='catpuccin'] {
+  --bg-primary: #1e1e2e;
+  --bg-secondary: #292739;
+  --main: #abe9b3;
+  --accent: #575268;
+  --accent-alt: #fae3b0;
+  --text: #d9e0ee;
+  --error: #f28fad;
+  --error-alt: #e8a2af;
+}

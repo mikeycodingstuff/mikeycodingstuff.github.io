@@ -1,5 +1,12 @@
+@import 'themes/botanical';
+@import 'themes/bushido';
+@import 'themes/catpuccin';
 @import 'themes/dark';
+@import 'themes/dollar';
 @import 'themes/light';
+@import 'themes/moonlight';
+@import 'themes/peach-blossom';
+@import 'themes/rose-pine-dawn';
 @import 'themes/rose-pine-moon';
 
 @tailwind base;
