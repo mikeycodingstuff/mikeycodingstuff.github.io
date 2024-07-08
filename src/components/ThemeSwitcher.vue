@@ -1,22 +1,16 @@
-<script setup>
+<script setup lang="ts">
 import { useColorMode } from '@vueuse/core';
 import ColorSwatch from '@/components/ColorSwatch.vue';
+import { themes } from '@/themes';
 
 const colorMode = useColorMode({
+  attribute: 'theme',
   disableTransition: false,
-  options: {
-    light: 'light',
-    dark: 'dark',
-    cafe: 'cafe',
-    'rose-pine-moon': 'rose-pine-moon'
-  },
-  attribute: 'theme'
+  modes: themes
 });
 
 const switchTheme = () => {
   if (colorMode.value === 'dark') {
-    colorMode.value = 'cafe';
-  } else if (colorMode.value === 'cafe') {
     colorMode.value = 'light';
   } else if (colorMode.value === 'light') {
     colorMode.value = 'rose-pine-moon';
@@ -24,30 +18,38 @@ const switchTheme = () => {
     colorMode.value = 'dark';
   }
 };
+
+const unKebab = (string) => string.replace(/-/g, ' ');
 </script>
 
 <template>
-  <div class="grid gap-10">
-    <div class="mt-3 w-64">
-      <h1 class="text-2xl text-center mb-3 font-mono">colours:</h1>
-      <div class="grid space-y-5">
-        <color-swatch color-token="main" />
-        <color-swatch color-token="text" />
-        <color-swatch color-token="muted" />
-        <color-swatch color-token="bg-primary" borderColorToken="text" />
-      </div>
+  <div class="grid gap-10 w-full place-items-center">
+    <p
+      class="text-2xl text-center text-theme-accent font-mono lowercase transition-colors duration-300"
+    >
+      {{ unKebab(colorMode) }}
+    </p>
+
+    <div class="grid space-y-5 w-full">
+      <color-swatch bg-class="bg-theme-main" color-token="main" />
+      <color-swatch bg-class="bg-theme-text" color-token="text" />
+      <color-swatch bg-class="bg-theme-muted" color-token="muted" />
+      <color-swatch bg-class="bg-theme-accent" color-token="accent" />
+      <color-swatch
+        bg-class="bg-theme-bg-primary"
+        border-class="border border-theme-text"
+        color-token="bg-primary"
+      />
+      <color-swatch bg-class="bg-theme-bg-secondary" color-token="bg-secondary" />
     </div>
 
-    <div class="flex items-center gap-5">
+    <div>
       <button
         @click="switchTheme"
-        class="p-3 bg-theme-main border border-theme-text hover:text-theme-accent hover:border-theme-accent transition-colors"
+        class="px-4 py-2 bg-theme-bg-secondary border border-theme-text hover:text-theme-accent hover:border-theme-accent transition-colors duration-300"
       >
         Switch Theme
       </button>
-      <h1 class="text-2xl">
-        Current theme: <span class="text-theme-accent capitalize">{{ colorMode }}</span>
-      </h1>
     </div>
   </div>
 </template>

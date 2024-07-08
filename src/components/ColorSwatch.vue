@@ -1,20 +1,14 @@
-<script setup>
+<script setup lang="ts">
 defineProps({
-  colorToken: String,
-  borderColorToken: String
+  bgClass: String,
+  borderClass: String,
+  colorToken: String
 });
 </script>
 
 <template>
   <div class="flex items-center space-x-2">
-    <div
-      :class="
-        borderColorToken
-          ? `border border-${borderColorToken} w-6 h-6 bg-theme-${colorToken}`
-          : `w-6 h-6 bg-theme-${colorToken}`
-      "
-    ></div>
-    <span class="font-mono">{{ colorToken }}</span>
-    <span class="font-mono">{{ borderColorToken }}</span>
+    <div :class="`w-6 h-6 ${bgClass} ${borderClass} transition-colors duration-300`"></div>
+    <span class="font-mono transition-colors duration-300">{{ colorToken }}</span>
   </div>
 </template>
