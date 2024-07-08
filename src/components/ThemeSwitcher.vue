@@ -1,15 +1,15 @@
 <script setup>
 import { useColorMode } from '@vueuse/core';
-
-const modes = {
-  light: 'light',
-  dark: 'dark',
-  cafe: 'cafe'
-};
+import ColorSwatch from '@/components/ColorSwatch.vue';
 
 const colorMode = useColorMode({
   disableTransition: false,
-  modes,
+  options: {
+    light: 'light',
+    dark: 'dark',
+    cafe: 'cafe',
+    'rose-pine-moon': 'rose-pine-moon'
+  },
   attribute: 'theme'
 });
 
@@ -19,43 +19,35 @@ const switchTheme = () => {
   } else if (colorMode.value === 'cafe') {
     colorMode.value = 'light';
   } else if (colorMode.value === 'light') {
+    colorMode.value = 'rose-pine-moon';
+  } else if (colorMode.value === 'rose-pine-moon') {
     colorMode.value = 'dark';
   }
 };
 </script>
 
 <template>
-  <div class="flex items-center gap-5">
-    <h1 class="text-2xl">
-      Current theme: <span class="text-theme-accent capitalize">{{ colorMode }}</span>
-    </h1>
-    <button
-      @click="switchTheme"
-      class="p-3 bg-theme-main border border-theme-text hover:text-theme-accent hover:border-theme-accent transition-colors"
-    >
-      Switch Theme
-    </button>
-  </div>
-  <div class="text-center mt-12">
-    <h1 class="text-2xl">Theme colours:</h1>
-    <div class="flex">
-      <div class="flex bg-theme-main w-24 h-16 items-center justify-center">main</div>
-      <div class="flex bg-theme-text text-theme-main w-24 h-16 items-center justify-center">
-        text
-      </div>
-      <div class="flex bg-theme-accent w-24 h-16 items-center justify-center">accent</div>
-      <div
-        class="flex bg-theme-bg-primary border border-theme-text w-24 h-16 items-center justify-center"
-      >
-        bg-primary
+  <div class="grid gap-10">
+    <div class="mt-3 w-64">
+      <h1 class="text-2xl text-center mb-3 font-mono">colours:</h1>
+      <div class="grid space-y-5">
+        <color-swatch color-token="main" />
+        <color-swatch color-token="text" />
+        <color-swatch color-token="muted" />
+        <color-swatch color-token="bg-primary" borderColorToken="text" />
       </div>
     </div>
-  </div>
 
-  <div class="mt-12">
-    <h1 class="text-2xl text-left">Themes:</h1>
-    <ul v-for="mode in modes" :key="mode">
-      <li class="list-disc">{{ mode }}</li>
-    </ul>
+    <div class="flex items-center gap-5">
+      <button
+        @click="switchTheme"
+        class="p-3 bg-theme-main border border-theme-text hover:text-theme-accent hover:border-theme-accent transition-colors"
+      >
+        Switch Theme
+      </button>
+      <h1 class="text-2xl">
+        Current theme: <span class="text-theme-accent capitalize">{{ colorMode }}</span>
+      </h1>
+    </div>
   </div>
 </template>
