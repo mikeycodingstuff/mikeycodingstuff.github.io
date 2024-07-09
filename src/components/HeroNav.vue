@@ -4,7 +4,9 @@ import HeroNavLink from '@/components/HeroNavLink.vue';
 
 <template>
   <div>
-    <p class="text-theme-accent-alt">Press <span class="font-mono">`Esc`</span> to navigate via the command bar</p>
+    <p class="text-theme-accent-alt">
+      Press <span class="font-mono">`Esc`</span> to navigate via the command bar
+    </p>
     <div class="flex justify-center">
       <hero-nav-link link="/" name="home" />
       <hero-nav-link link="about" name="about" />
