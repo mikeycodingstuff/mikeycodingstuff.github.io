@@ -7,6 +7,15 @@ export default {
   // darkMode: 'selector',
   theme: {
     extend: {
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { opacity: '0' },
+          '50%': { opacity: '1' },
+        }
+      },
+      animation: {
+        'blink': 'wiggle 1s ease-in-out infinite',
+      },
       colors: {
         theme: {
           'bg-primary': 'var(--bg-primary)',
