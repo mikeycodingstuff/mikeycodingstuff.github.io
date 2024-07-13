@@ -6,7 +6,7 @@ import HeroNav from '@/components/hero/HeroNav.vue';
 useColorMode({
   attribute: 'theme',
   disableTransition: false,
-  modes: themes
+  modes: themes,
 });
 </script>
 
