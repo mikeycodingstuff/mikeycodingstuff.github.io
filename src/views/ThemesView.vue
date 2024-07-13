@@ -4,7 +4,7 @@ import ThemeColorsDisplay from '@/components/themes/ThemeColorsDisplay.vue';
 </script>
 
 <template>
-  <div class="h-screen w-screen grid grid-cols-2 place-items-center">
+  <div class="flex items-center justify-center p-12 gap-20">
     <theme-switcher />
     <theme-colors-display />
   </div>
