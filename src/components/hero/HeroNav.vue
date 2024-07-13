@@ -1,12 +1,15 @@
 <script setup>
-import HeroNavLink from '@/components/HeroNavLink.vue';
+import HeroNavLink from '@/components/hero/HeroNavLink.vue';
 </script>
 
 <template>
   <div>
-    <p class="text-theme-accent-alt">
-      Press <span class="font-mono">`Esc`</span> to navigate via the command bar
-    </p>
+    <div class="p-2">
+      <p class="text-theme-accent-alt text-center transition-colors duration-300">
+        Press <span class="font-mono">`Esc`</span> to navigate via the command bar
+      </p>
+    </div>
+
     <div class="flex justify-center">
       <hero-nav-link link="/" name="home" />
       <hero-nav-link link="about" name="about" />
