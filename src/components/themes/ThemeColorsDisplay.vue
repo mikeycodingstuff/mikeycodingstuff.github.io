@@ -3,7 +3,7 @@ import ColorSwatch from '@/components/themes/ColorSwatch.vue';
 </script>
 
 <template>
-  <div class="grid space-y-5">
+  <div class="p-2 grid grid-cols-2 gap-y-5">
     <color-swatch
       bg-class="bg-theme-bg-primary"
       border-class="border border-theme-text"
