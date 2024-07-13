@@ -1,10 +1,8 @@
 [theme='dollar'] {
-  --bg-primary: #e4e4d4;
-  --bg-secondary: #cbd0bf;
+  --bg: #e4e4d4;
+  --bg-alt: #cbd0bf;
   --main: #6b886b;
   --accent: #8a9b69;
-  --accent-alt: #424643;
+  --accent-alt: #d60000;
   --text: #555a56;
-  --error: #d60000;
-  --error-alt: #f68484;
 }

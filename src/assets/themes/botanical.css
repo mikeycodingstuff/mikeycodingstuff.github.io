@@ -1,10 +1,8 @@
 [theme='botanical'] {
-  --bg-primary: #7b9c98;
-  --bg-secondary: #72908d;
-  --main: #eaf1f3;
+  --bg: #7b9c98;
+  --bg-alt: #72908d;
+  --main: #abc6c4;
   --accent: #495755;
-  --accent-alt: #abc6c4;
+  --accent-alt: #f6c9b4;
   --text: #eaf1f3;
-  --error: #f6c9b4;
-  --error-alt: #f59a71;
 }
