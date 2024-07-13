@@ -1,10 +1,8 @@
 [theme='dark'] {
-  --text: #f3eae0;
+  --bg: #1f1e1e;
+  --bg-alt: #2c2c2c;
   --main: #9d7fec;
   --accent: #7fecc9;
-  --accent-alt: #8c8b8b;
-  --bg-primary: #2c2c2c;
-  --bg-secondary: #545454;
-  --error: #ec7f7f;
-  --error-alt: #ec9c7f;
+  --accent-alt: #ecd67f;
+  --text: #f3eae0;
 }

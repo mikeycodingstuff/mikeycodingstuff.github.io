@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+import defaultTheme from 'tailwindcss/defaultTheme';
 export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
-  // darkMode: 'selector',
   theme: {
     extend: {
       keyframes: {
@@ -18,15 +18,17 @@ export default {
       },
       colors: {
         theme: {
-          'bg-primary': 'var(--bg-primary)',
-          'bg-secondary': 'var(--bg-secondary)',
+          'bg': 'var(--bg)',
+          'bg-alt': 'var(--bg-alt)',
           main: 'var(--main)',
           accent: 'var(--accent)',
           'accent-alt': 'var(--accent-alt)',
           text: 'var(--text)',
-          error: 'var(--error)',
-          'error-alt': 'var(--error-alt)',
         },
+      },
+      fontFamily: {
+        'sans': ['"Fira Code"', ...defaultTheme.fontFamily.mono],
+        'mono': ['"Fira Code"', ...defaultTheme.fontFamily.mono],
       },
     },
   },

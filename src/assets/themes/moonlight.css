@@ -1,10 +1,8 @@
 [theme='moonlight'] {
-  --bg-primary: #191f28;
-  --bg-secondary: #141a22;
+  --bg: #191f28;
+  --bg-alt: #141a22;
   --main: #c69f68;
-  --accent: #4b5975;
-  --accent-alt: #8f744b;
+  --accent: #b81b2c;
+  --accent-alt: #4b5975;
   --text: #ccccb5;
-  --error: #b81b2c;
-  --error-alt: #84131f;
 }

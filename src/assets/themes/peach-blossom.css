@@ -1,10 +1,8 @@
 [theme='peach-blossom'] {
-  --bg-primary: #292929;
-  --bg-secondary: #2a363b;
+  --bg: #292929;
+  --bg-alt: #2a363b;
   --main: #99b898;
-  --accent: #616161;
+  --accent: #ff6961;
   --accent-alt: #616161;
   --text: #fecea8;
-  --error: #ff6961;
-  --error-alt: #e84a5f;
 }

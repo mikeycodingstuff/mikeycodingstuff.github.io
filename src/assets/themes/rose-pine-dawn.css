@@ -1,10 +1,8 @@
 [theme='rose-pine-dawn'] {
-  --bg-primary: #fffaf3;
-  --bg-secondary: #f0e9df;
+  --bg: #fffaf3;
+  --bg-alt: #f2e9e1;
   --main: #56949f;
   --accent: #c4a7e7;
   --accent-alt: #ea9d34;
-  --text: #286983;
-  --error: #b4637a;
-  --error-alt: #d7827e;
+  --text: #575279;
 }
