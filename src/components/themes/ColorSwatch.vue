@@ -2,7 +2,7 @@
 defineProps({
   bgClass: String,
   borderClass: String,
-  colorToken: String
+  colorToken: String,
 });
 </script>
 

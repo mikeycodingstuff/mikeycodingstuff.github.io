@@ -6,7 +6,7 @@ import { unKebab } from '@/helpers';
 const colorMode = useColorMode({
   attribute: 'theme',
   disableTransition: false,
-  modes: themes
+  modes: themes,
 });
 </script>
 

@@ -8,5 +8,5 @@ export const themes = {
   moonlight: 'moonlight',
   'peach-blossom': 'peach-blossom',
   'rose-pine-dawn': 'rose-pine-dawn',
-  'rose-pine-moon': 'rose-pine-moon'
+  'rose-pine-moon': 'rose-pine-moon',
 };

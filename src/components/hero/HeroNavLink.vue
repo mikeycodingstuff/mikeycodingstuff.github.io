@@ -3,7 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 defineProps({
   link: String,
-  name: String
+  name: String,
 });
 
 const isUsingKeyboard = ref(false);
@@ -35,7 +35,7 @@ onUnmounted(() => {
       :to="link"
       :class="[
         'rounded p-1 text-2xl hover:text-theme-main focus:outline-none transition-shadow duration-300 underline-offset-4 decoration-4 decoration-theme-main',
-        isUsingKeyboard ? 'focus:border-theme-bg-primary focus:ring-4 focus:ring-theme-main' : ''
+        isUsingKeyboard ? 'focus:border-theme-bg-primary focus:ring-4 focus:ring-theme-main' : '',
       ]"
       activeClass="underline"
       >{{ name }}</router-link
