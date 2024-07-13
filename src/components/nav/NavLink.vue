@@ -34,8 +34,8 @@ onUnmounted(() => {
     <router-link
       :to="link"
       :class="[
-        'rounded p-1 text-2xl hover:text-theme-main focus:outline-none transition-shadow duration-300 underline-offset-4 decoration-4 decoration-theme-main',
-        isUsingKeyboard ? 'focus:border-theme-bg-primary focus:ring-4 focus:ring-theme-main' : '',
+        'rounded p-1 text-2xl text-theme-main hover:text-theme-accent hover:decoration-theme-accent focus:outline-none underline-offset-4 decoration-4 decoration-theme-main transition duration-300',
+        isUsingKeyboard ? 'focus:ring-4 focus:ring-theme-main' : '',
       ]"
       activeClass="underline"
       >{{ name }}</router-link
