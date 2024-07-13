@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useColorMode } from '@vueuse/core';
 import { themes } from '@/themes';
-import HeroNav from '@/components/hero/HeroNav.vue';
+import NavBar from '@/components/nav/NavBar.vue';
 
 useColorMode({
   attribute: 'theme',
@@ -11,8 +11,6 @@ useColorMode({
 </script>
 
 <template>
-  <div>
-    <hero-nav v-if="$route.path !== '/'"></hero-nav>
-    <router-view />
-  </div>
+  <nav-bar v-if="$route.path !== '/'"></nav-bar>
+  <router-view class="h-screen w-screen grid place-items-center" />
 </template>
