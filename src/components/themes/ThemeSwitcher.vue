@@ -11,7 +11,7 @@ const colorMode = useColorMode({
 </script>
 
 <template>
-  <div class="grid gap-10 place-items-center">
+  <div class="p-12 rounded grid gap-10 place-items-center bg-theme-bg-secondary w-72">
     <p class="text-2xl text-center text-theme-accent font-mono lowercase transition-colors">
       {{ unKebab(colorMode) }}
     </p>
