@@ -16,14 +16,14 @@ watch(pressed, () => (isUsingKeyboard.value = false));
 </script>
 
 <template>
-  <div class="p-2">
+  <div class="p-2 text-theme-main">
     <router-link
       :to="link"
       :class="[
-        'rounded p-1 text-2xl text-theme-main hover:text-theme-accent hover:decoration-theme-accent focus:outline-none underline-offset-4 decoration-4 decoration-theme-main transition duration-300',
+        'rounded p-1 text-2xl hover:text-theme-accent hover:decoration-theme-accent focus:outline-none underline-offset-4 decoration-4 decoration-theme-main transition duration-300',
         isUsingKeyboard ? 'focus:ring-4 focus:ring-theme-main' : '',
       ]"
-      activeClass="underline"
+      activeClass="text-theme-accent"
       >{{ name }}
     </router-link>
   </div>
