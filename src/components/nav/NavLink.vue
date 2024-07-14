@@ -8,18 +8,11 @@ defineProps({
 });
 
 const isUsingKeyboard = ref(false);
-
-onKeyStroke(['Tab', 'Shift'], () => {
-  isUsingKeyboard.value = true;
-});
-
 const { pressed } = useMousePressed();
 
-watch(pressed, (newPressed) => {
-  if (newPressed) {
-    isUsingKeyboard.value = false;
-  }
-});
+onKeyStroke(['Tab', 'Shift'], () => (isUsingKeyboard.value = true));
+
+watch(pressed, () => (isUsingKeyboard.value = false));
 </script>
 
 <template>
