@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import TypeWriter from '@/components/TypeWriter.vue';
-import HeroNav from '@/components/nav/NavBar.vue';
+import NavBar from '@/components/nav/NavBar.vue';
 import HomeHero from '@/components/hero/HomeHero.vue';
 import { messages } from '@/typewriter';
 </script>
@@ -29,7 +29,7 @@ import { messages } from '@/typewriter';
             Press <span class="text-theme-accent-alt">`Esc`</span> to navigate via the command bar
           </p>
         </div>
-        <hero-nav />
+        <nav-bar />
       </div>
     </home-hero>
   </div>
