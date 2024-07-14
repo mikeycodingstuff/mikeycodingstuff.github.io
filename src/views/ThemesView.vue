@@ -12,9 +12,10 @@ import ExternalLink from '@/components/nav/ExternalLink.vue';
           Use this theme-switcher, or hit
           <span class="text-theme-accent-alt">`Esc`</span> to change the theme!
         </p>
+        <br />
         <p class="leading-normal">
           Heavily inspired by
-          <external-link link="https://monkeytype.com">monkeytype</external-link>
+          <external-link link="https://monkeytype.com">monkeytype</external-link>.
         </p>
       </div>
       <div class="grid center p-6 bg-theme-bg-alt rounded-lg">
