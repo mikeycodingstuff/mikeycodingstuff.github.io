@@ -4,4 +4,4 @@ export const messages = [
   'frontend developer',
   'full stack developer',
   'laravel developer',
-]
+];
