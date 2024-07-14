@@ -1,5 +1,6 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, watch } from 'vue';
+import { onKeyStroke, useMousePressed } from '@vueuse/core';
 
 defineProps({
   link: String,
@@ -8,24 +9,16 @@ defineProps({
 
 const isUsingKeyboard = ref(false);
 
-const handleKeydown = (e) => {
-  if (e.key === 'Tab' || e.key === 'Shift') {
-    isUsingKeyboard.value = true;
-  }
-};
-
-const handleMousedown = () => {
-  isUsingKeyboard.value = false;
-};
-
-onMounted(() => {
-  window.addEventListener('keydown', handleKeydown);
-  window.addEventListener('mousedown', handleMousedown);
+onKeyStroke(['Tab', 'Shift'], () => {
+  isUsingKeyboard.value = true;
 });
 
-onUnmounted(() => {
-  window.removeEventListener('keydown', handleKeydown);
-  window.removeEventListener('mousedown', handleMousedown);
+const { pressed } = useMousePressed();
+
+watch(pressed, (newPressed) => {
+  if (newPressed) {
+    isUsingKeyboard.value = false;
+  }
 });
 </script>
 
@@ -38,7 +31,7 @@ onUnmounted(() => {
         isUsingKeyboard ? 'focus:ring-4 focus:ring-theme-main' : '',
       ]"
       activeClass="underline"
-      >{{ name }}</router-link
-    >
+      >{{ name }}
+    </router-link>
   </div>
 </template>
