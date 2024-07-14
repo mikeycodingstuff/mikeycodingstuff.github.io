@@ -2,8 +2,7 @@
 import TypeWriter from '@/components/TypeWriter.vue';
 import HeroNav from '@/components/nav/NavBar.vue';
 import HomeHero from '@/components/hero/HomeHero.vue';
-
-const typewriterText = ['^_^', 'full stack developer', 'laravel developer'];
+import { messages } from '@/typewriter';
 </script>
 
 <template>
@@ -22,7 +21,7 @@ const typewriterText = ['^_^', 'full stack developer', 'laravel developer'];
       </template>
 
       <template #sub>
-        <type-writer prompt=">" :text="typewriterText" />
+        <type-writer prompt=">" :messages="messages" />
       </template>
       <div>
         <div class="p-2">

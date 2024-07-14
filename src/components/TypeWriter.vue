@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   prompt: String,
-  text: Array,
+  messages: Array,
 });
 </script>
 
@@ -9,7 +9,7 @@ defineProps({
   <div>
     <p class="text-2xl">
       <span class="">{{ prompt }}</span>
-      {{ text[Math.floor(Math.random() * text.length)] }}
+      {{ messages[Math.floor(Math.random() * messages.length)] }}
       <span class="inline-block animate-blink">_</span>
     </p>
   </div>
