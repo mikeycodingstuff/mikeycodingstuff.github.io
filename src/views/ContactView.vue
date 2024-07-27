@@ -18,7 +18,7 @@ import LinkedInIcon from '@/components/icons/LinkedInIcon.vue';
       <div class="flex gap-x-12 text-2xl">
         <external-link
           link="https://github.com/mikeycodingstuff"
-          contact
+          isContactLink
           class="focus:ring-theme-main"
         >
           <div class="group flex gap-3 items-center rounded text-theme-main p-1">
@@ -29,7 +29,7 @@ import LinkedInIcon from '@/components/icons/LinkedInIcon.vue';
 
         <external-link
           link="https://www.linkedin.com/in/mikeyying"
-          contact
+          isContactLink
           class="focus:ring-theme-main"
         >
           <div class="group flex gap-3 items-center rounded text-theme-main p-1">
