@@ -21,7 +21,7 @@ import { messages } from '@/typewriter';
       </template>
 
       <template #sub>
-        <type-writer prompt=">" :messages="messages" />
+        <type-writer :messages="messages" />
       </template>
 
       <div>

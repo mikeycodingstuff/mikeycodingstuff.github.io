@@ -1,7 +1,7 @@
 export const messages = [
   '^_^',
-  'backend developer',
-  'frontend developer',
-  'full stack developer',
+  'back-end developer',
+  'front-end developer',
+  'full-stack developer',
   'laravel developer',
 ];
