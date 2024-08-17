@@ -4,6 +4,7 @@ import { ref } from 'vue';
 import { vOnClickOutside } from '@vueuse/components';
 
 const modal = ref(false);
+
 function closeModal() {
   modal.value = false;
 }
@@ -16,6 +17,7 @@ function closeModal() {
     <nav-link link="contact" name="contact" />
     <nav-link link="projects" name="projects" />
     <nav-link link="themes" name="themes" />
+    <!--    TODO: update cv and then add to the repo and change this code-->
     <!--    <a href="/mikey-ying-cv.pdf" download="mikey-ying-cv.pdf" class="inline-block">-->
     <!--      <button-->
     <!--        class="rounded w-full h-full p-1 px-4 text-nowrap bg-theme-main text-theme-bg hover:bg-theme-text focus:outline-none focus:ring-4 focus:ring-theme-text underline-offset-4 transition duration-300"-->
