@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import NavLink from '@/components/nav/NavLink.vue';
 import { ref } from 'vue';
 import { vOnClickOutside } from '@vueuse/components';
