@@ -20,7 +20,7 @@ watch(pressed, () => (isUsingKeyboard.value = false));
     <router-link
       :to="link"
       :class="[
-        'rounded p-1 text-2xl hover:text-theme-accent focus:outline-none underline-offset-4 decoration-4 transition duration-300',
+        'rounded p-1 text-4xl md:text-2xl hover:text-theme-accent focus:outline-none underline-offset-4 decoration-4 transition duration-300',
         isUsingKeyboard ? 'focus:ring-4 focus:ring-theme-main' : '',
       ]"
       activeClass="text-theme-accent"

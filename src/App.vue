@@ -13,6 +13,6 @@ useColorMode({
 <template>
   <div class="flex flex-col h-screen">
     <nav-bar v-if="$route.path !== '/'"></nav-bar>
-    <router-view class="grid grow place-items-center" />
+    <router-view class="grid md:grow md:place-items-center" />
   </div>
 </template>

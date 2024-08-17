@@ -10,7 +10,7 @@ function closeModal() {
 </script>
 
 <template>
-  <div class="flex justify-center my-3">
+  <div class="flex flex-col md:flex-row justify-center my-3">
     <nav-link link="/" name="home" />
     <nav-link link="about" name="about" />
     <nav-link link="contact" name="contact" />
@@ -26,7 +26,7 @@ function closeModal() {
     <div class="relative">
       <button
         @click="modal = true"
-        class="rounded p-1 px-4 w-full h-full text-nowrap bg-theme-main text-theme-bg hover:bg-theme-text focus:outline-none focus:ring-4 focus:ring-theme-text underline-offset-4 transition duration-300"
+        class="rounded p-1 px-4 w-full h-full text-3xl md:text-xl text-nowrap bg-theme-main text-theme-bg hover:bg-theme-text focus:outline-none focus:ring-4 focus:ring-theme-text underline-offset-4 transition duration-300"
       >
         download cv
       </button>

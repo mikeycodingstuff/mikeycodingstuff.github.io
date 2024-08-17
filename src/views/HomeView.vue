@@ -7,7 +7,7 @@ import { messages } from '@/typewriter';
 
 <template>
   <div>
-    <home-hero class="grid place-items-center md:grid-cols-2 gap-24 p-8">
+    <home-hero class="grid md:place-items-center md:grid-cols-2 md:gap-24 md:p-8">
       <template #header>
         <p class="leading-tight">Hello,</p>
         <p class="leading-tight">
@@ -24,7 +24,7 @@ import { messages } from '@/typewriter';
         <type-writer prompt=">" :messages="messages" />
       </template>
       <div>
-        <div class="p-2">
+        <div class="p-2 hidden md:block">
           <p class="text-center transition-colors duration-300">
             Press <span class="text-theme-accent-alt">`Esc`</span> to navigate via the command bar
           </p>
