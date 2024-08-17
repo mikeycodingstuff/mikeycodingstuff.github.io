@@ -6,7 +6,7 @@ import LinkedInIcon from '@/components/icons/LinkedInIcon.vue';
 
 <template>
   <div>
-    <div class="grid place-items-center gap-12">
+    <div class="grid place-items-center gap-12 p-3">
       <div class="text-2xl max-w-2xl text-center">
         <p>
           The best way to contact me is via

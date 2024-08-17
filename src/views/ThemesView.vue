@@ -6,7 +6,7 @@ import ExternalLink from '@/components/nav/ExternalLink.vue';
 
 <template>
   <div>
-    <div class="flex items-center">
+    <div class="flex flex-col md:flex-row items-center p-3 gap-y-10">
       <div class="text-2xl max-w-2xl">
         <p class="leading-normal text-pretty">
           Use this theme-switcher, or hit

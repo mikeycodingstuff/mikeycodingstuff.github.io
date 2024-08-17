@@ -7,10 +7,10 @@ import { messages } from '@/typewriter';
 
 <template>
   <div>
-    <home-hero class="grid md:place-items-center md:grid-cols-2 md:gap-24 md:p-8">
+    <home-hero class="grid md:place-items-center md:grid-cols-2 h-screen container">
       <template #header>
         <p class="leading-tight">Hello,</p>
-        <p class="leading-tight">
+        <p class="leading-tight text-nowrap">
           I'm
           <router-link
             to="/about"
@@ -23,12 +23,14 @@ import { messages } from '@/typewriter';
       <template #sub>
         <type-writer prompt=">" :messages="messages" />
       </template>
+
       <div>
         <div class="p-2 hidden md:block">
-          <p class="text-center transition-colors duration-300">
+          <p class="text-center md:text-sm lg:text-base xl:text-lg transition-colors duration-300">
             Press <span class="text-theme-accent-alt">`Esc`</span> to navigate via the command bar
           </p>
         </div>
+
         <nav-bar />
       </div>
     </home-hero>

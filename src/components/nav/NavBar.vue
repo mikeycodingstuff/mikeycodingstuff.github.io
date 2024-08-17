@@ -10,7 +10,7 @@ function closeModal() {
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row justify-center my-3">
+  <div class="flex flex-col md:flex-row justify-center md:items-center my-3 flex-wrap">
     <nav-link link="/" name="home" />
     <nav-link link="about" name="about" />
     <nav-link link="contact" name="contact" />
@@ -23,10 +23,10 @@ function closeModal() {
     <!--        download cv-->
     <!--      </button>-->
     <!--    </a>-->
-    <div class="relative">
+    <div class="relative my-10 md:my-3 md:mx-0 mx-auto">
       <button
         @click="modal = true"
-        class="rounded p-1 px-4 w-full h-full text-3xl md:text-xl text-nowrap bg-theme-main text-theme-bg hover:bg-theme-text focus:outline-none focus:ring-4 focus:ring-theme-text underline-offset-4 transition duration-300"
+        class="rounded p-1 px-4 text-3xl md:text-xl lg:text-2xl text-nowrap bg-theme-main text-theme-bg hover:bg-theme-text focus:outline-none focus:ring-4 focus:ring-theme-text underline-offset-4 transition duration-300"
       >
         download cv
       </button>
@@ -34,7 +34,7 @@ function closeModal() {
         <div
           v-if="modal"
           v-on-click-outside="closeModal"
-          class="absolute left-1/2 transform -translate-x-1/2 rounded p-4 mt-4 bg-theme-main text-theme-bg selection:bg-theme-text w-max items-center"
+          class="absolute left-1/2 transform -translate-x-1/2 rounded p-3 mt-2 text-base md:text-xs lg:text-sm bg-theme-main text-theme-bg selection:bg-theme-text w-max items-center"
         >
           Todo: rewrite CV 😅
         </div>
