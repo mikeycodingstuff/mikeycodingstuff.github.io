@@ -5,6 +5,7 @@ import ExternalLink from '@/components/nav/ExternalLink.vue';
 <template>
   <div class="text-center p-12">
     <h1 class="text-4xl text-theme-main">
+      <!--TODO: update cv and then add to the repo and change this code-->
       TODO: <span class="text-theme-accent">projects page</span>!
     </h1>
     <p class="mt-6 text-2xl">
