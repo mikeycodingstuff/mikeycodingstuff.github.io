@@ -6,7 +6,7 @@ import InternalLink from '@/components/nav/InternalLink.vue';
 
 <template>
   <div>
-    <div class="flex flex-col space-y-10">
+    <div class="flex flex-col space-y-10 p-5">
       <about-paragraph>
         Coding for me started with a bootcamp; the full stack dev course at
         <external-link link="https://io-academy.uk/">iO Academy</external-link>. Through the 16 week
