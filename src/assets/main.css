@@ -1,0 +1,16 @@
+@import 'themes/botanical.css';
+@import 'themes/bushido.css';
+@import 'themes/catpuccin.css';
+@import 'themes/dark.css';
+@import 'themes/dollar.css';
+@import 'themes/light.css';
+@import 'themes/moonlight.css';
+@import 'themes/peach-blossom.css';
+@import 'themes/rose-pine-dawn.css';
+@import 'themes/rose-pine-moon.css';
+
+@import 'fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
