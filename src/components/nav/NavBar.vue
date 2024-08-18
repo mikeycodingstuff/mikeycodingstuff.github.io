@@ -29,7 +29,7 @@ function closeModal() {
     <div class="relative my-10 md:my-3 md:mx-0 mx-auto">
       <button
         @click="modal = true"
-        class="rounded p-1 px-4 text-3xl md:text-xl lg:text-2xl text-nowrap bg-theme-main text-theme-bg hover:bg-theme-text focus:outline-none focus:ring-4 focus:ring-theme-text underline-offset-4 transition duration-300"
+        class="rounded p-1 px-4 text-3xl md:text-xl lg:text-2xl text-nowrap bg-theme-accent-alt text-theme-bg hover:bg-theme-text focus:outline-none focus:ring-4 focus:ring-theme-text underline-offset-4 transition duration-300"
       >
         download cv
       </button>
