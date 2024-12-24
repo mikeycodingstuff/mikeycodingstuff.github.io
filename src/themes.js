@@ -1,41 +1,37 @@
 const themeFiles = import.meta.glob('@/assets/themes/*.css', { eager: false });
 
+/**
+ * Reads a CSS file and extracts the theme name from it.
+ */
 async function readCSSFile(filePath) {
   try {
-    // Fetch the file content
     const response = await fetch(filePath);
-    if (!response.ok) {
-      throw new Error(`Failed to fetch CSS file: ${response.statusText}`);
-    }
-
     const cssText = await response.text();
 
-    // Extract information using regex (e.g., find [theme='botanical'])
-    const themeRegex = /\[theme='([^']+)'\]/g;
-    let match;
-    while ((match = themeRegex.exec(cssText)) !== null) {
-      return match[1];
-    }
+    const themeRegex = /\[theme='([^']+)'\]/;
+    const match = themeRegex.exec(cssText);
+
+    return match ? match[1] : null;
   } catch (error) {
-    console.error(`Error reading CSS file: ${error.message}`);
+    console.error(`Error reading CSS file '${filePath}': ${error.message}`);
+    return null;
   }
 }
 
 /**
- * Dynamically generate a list of themes in the format
- * 'theme-name' => 'theme-name'
- * for use in useColorMode
+ * Dynamically generates a list of themes in the format
+ * 'theme-name' => 'theme-name' for use in useColorMode.
  */
 export const themes = await (async () => {
-  const acc = {};
+  const themeMap = {};
 
+  // Iterate over each CSS file and extract its theme name
   for (const filePath of Object.keys(themeFiles)) {
     const themeName = await readCSSFile(filePath);
-
     if (themeName) {
-      acc[themeName] = themeName;
+      themeMap[themeName] = themeName;
     }
   }
 
-  return acc;
+  return themeMap;
 })();
