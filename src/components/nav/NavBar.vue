@@ -16,6 +16,7 @@ const isHomePage = computed(() => route.path === '/');
 <template>
   <div class="flex md:justify-center items-center">
     <!-- Hamburger Menu Button -->
+    <!-- TODO: add animations - refactor to alpine? -->
     <button v-if="!isHomePage" @click="toggleMenu" class="md:hidden p-2 focus:outline-none">
       <svg
         class="w-8 h-8 text-theme-main"
