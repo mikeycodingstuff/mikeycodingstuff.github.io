@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import AboutParagraph from '@/components/about/AboutParagraph.vue';
 import ExternalLink from '@/components/nav/ExternalLink.vue';
-import InternalLink from '@/components/nav/InternalLink.vue';
 </script>
 
 <template>
@@ -11,8 +10,7 @@ import InternalLink from '@/components/nav/InternalLink.vue';
         Coding for me started with a bootcamp; the full stack dev course at
         <external-link link="https://io-academy.uk/">iO Academy</external-link>. Through the 16 week
         course I not only learnt all about full stack development, but worked together with my
-        cohort on several <internal-link link="/projects">group projects</internal-link>. The
-        projects were run following
+        cohort on several group projects. The projects were run following
         <external-link link="https://en.wikipedia.org/wiki/Agile_software_development"
           >Agile methodology</external-link
         >
