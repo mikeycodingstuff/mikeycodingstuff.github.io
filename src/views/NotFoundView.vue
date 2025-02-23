@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import InternalLink from '@/components/nav/InternalLink.vue';
 </script>
 
