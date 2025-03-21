@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { unKebab } from '~/helpers'
-import { themes } from '~/themes'
+import { unKebab } from '@/helpers'
+import { themes } from '@/themes'
 
 const colorMode = useColorMode()
 </script>

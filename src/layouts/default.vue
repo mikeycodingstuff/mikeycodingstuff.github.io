@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { themes } from '~/themes'
+import { themes } from '@/themes'
 
 useHead({
   bodyAttrs: {
