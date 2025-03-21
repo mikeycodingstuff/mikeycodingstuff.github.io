@@ -1,0 +1,42 @@
+@import './themes/botanical.css' layer(base);
+@import './themes/bushido.css' layer(base);
+@import './themes/catpuccin.css' layer(base);
+@import './themes/dark.css' layer(base);
+@import './themes/dollar.css' layer(base);
+@import './themes/light.css' layer(base);
+@import './themes/moonlight.css' layer(base);
+@import './themes/peach-blossom.css' layer(base);
+@import './themes/rose-pine-dawn.css' layer(base);
+@import './themes/rose-pine-moon.css' layer(base);
+
+@import './fonts.css' layer(base);
+
+@import 'tailwindcss';
+
+@theme {
+  --animate-blink: wiggle 1s ease-in-out infinite;
+
+  --color-theme-bg: var(--bg);
+  --color-theme-bg-alt: var(--bg-alt);
+  --color-theme-main: var(--main);
+  --color-theme-accent: var(--accent);
+  --color-theme-accent-alt: var(--accent-alt);
+  --color-theme-text: var(--text);
+
+  --font-sans:
+    'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+  --font-mono:
+    'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+
+  @keyframes wiggle {
+    0%,
+    100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
