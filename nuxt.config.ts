@@ -25,5 +25,9 @@ export default defineNuxtConfig({
     ],
   },
 
-  modules: ['@vueuse/nuxt', '@nuxt/eslint'],
+  modules: ['@vueuse/nuxt', '@nuxt/eslint', '@nuxtjs/color-mode'],
+
+  colorMode: {
+    classSuffix: '-theme',
+  },
 })

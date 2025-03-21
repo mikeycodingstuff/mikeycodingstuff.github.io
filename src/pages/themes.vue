@@ -17,9 +17,7 @@
         </p>
       </div>
       <div class="grid center p-6 bg-theme-bg-alt rounded-lg">
-        <ClientOnly>
-          <ThemeSwitcher />
-        </ClientOnly>
+        <ThemeSwitcher />
         <ThemeColorsDisplay class="p-4" />
       </div>
     </div>

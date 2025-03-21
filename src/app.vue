@@ -1,5 +1,14 @@
 <script setup lang="ts">
+import { themes } from '@/themes'
+
 const isHomePage = computed(() => useRoute().path === '/')
+
+// useColorMode({
+//   attribute: 'theme',
+//   disableTransition: false,
+//   modes: themes,
+//   initialValue: 'rose-pine-moon',
+// })
 </script>
 
 <template>

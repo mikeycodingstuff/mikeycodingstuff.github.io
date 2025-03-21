@@ -1,1 +1,1 @@
-export const unKebab = string => string.replace(/-/g, ' ')
+export const unKebab = (string: string) => string.replace(/-/g, ' ')
