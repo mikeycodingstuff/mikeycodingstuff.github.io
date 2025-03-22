@@ -5,11 +5,11 @@ defineProps({
     required: true,
   },
   screenshot: {
-    type: [String, null],
+    type: String,
     default: null,
   },
   alt: {
-    type: [String, null],
+    type: String,
     default: null,
   },
   githubLink: {
@@ -17,7 +17,7 @@ defineProps({
     required: true,
   },
   liveLink: {
-    type: [String, null],
+    type: String,
     default: null,
   },
 })
