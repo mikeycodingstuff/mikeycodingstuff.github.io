@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center p-4 lg:p-12">
-    <div class="grid grid-cols-1 gap-6 lg:gap-16 xl:gap-24 justify-items-center">
+  <div class="text-center p-4 lg:p-8">
+    <div>
       <ProjectCard
         project-name="Best Pokémon"
         github-link="https://github.com/mikeycodingstuff/best-pokemon"
@@ -19,15 +19,14 @@
           that pulls from a
           <ExternalLink to="https://supabase.com/" name="Supabase" />
           database. It deploys from main when the branch is updated in GitHub, and also has a
-          maintenance branch that I can publish to set the site in maintenance mode. I plan on
-          adding a section to show the wins/losses percentage for each Pokémon.
+          maintenance branch that I can publish to set the site in maintenance mode.
         </p>
       </ProjectCard>
     </div>
 
     <div class="self-end">
-      <p class="mt-6 text-2xl self-end">
-        Feel free to check out my
+      <p class="mt-6 lg:text-2xl self-end">
+        Check out my
         <ExternalLink to="https://github.com/mikeycodingstuff" name="GitHub" />
         to view my other work!
       </p>
