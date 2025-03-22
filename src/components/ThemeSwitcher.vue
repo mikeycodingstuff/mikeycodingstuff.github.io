@@ -18,7 +18,7 @@ const colorMode = useColorMode()
       </template>
 
       <p class="text-nowrap text-2xl text-center lowercase">
-        {{ unKebab(colorMode.preference) }}
+        {{ unKebab(colorMode.value) }}
       </p>
     </ColorScheme>
 
