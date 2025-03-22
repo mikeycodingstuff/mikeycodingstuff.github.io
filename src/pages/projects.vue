@@ -1,6 +1,6 @@
 <template>
-  <div class="text-center p-4 lg:p-8">
-    <div>
+  <div class="text-center m-4 lg:m-0 lg:mt-6">
+    <div class="grid gap-10 justify-center lg:px-6">
       <ProjectCard
         project-name="Best Pokémon"
         github-link="https://github.com/mikeycodingstuff/best-pokemon"
@@ -22,14 +22,23 @@
           maintenance branch that I can publish to set the site in maintenance mode.
         </p>
       </ProjectCard>
+      <ProjectCard
+        project-name="Placeholder"
+        github-link="https://github.com/mikeycodingstuff/best-pokemon"
+        alt="Dolor id cupidatat dolore pariatur est consequat"
+      >
+        <p>
+          Consequat ipsum tempor eu adipisicing consectetur. Quis laboris aute aliqua eiusmod dolor dolore fugiat incididunt. Occaecat qui adipisicing tempor occaecat sint nisi magna velit amet. Veniam cupidatat ullamco enim. Officia Lorem aliquip velit reprehenderit occaecat incididunt non occaecat deserunt veniam nostrud esse. Esse aute pariatur cupidatat sit proident nostrud. Nisi amet enim quis magna sint velit eu nostrud irure.
+        </p>
+      </ProjectCard>
     </div>
 
-    <div class="self-end">
-      <p class="mt-6 lg:text-2xl self-end">
+    <footer class="self-end">
+      <p class="mt-6 lg:text-2xl">
         Check out my
         <ExternalLink to="https://github.com/mikeycodingstuff" name="GitHub" />
         to view my other work!
       </p>
-    </div>
+    </footer>
   </div>
 </template>
