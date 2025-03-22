@@ -9,7 +9,7 @@
 @import './themes/rose-pine-dawn.css' layer(base);
 @import './themes/rose-pine-moon.css' layer(base);
 
-@import './fonts.css';
+@import './fonts.css' layer(base);
 
 @import 'tailwindcss';
 
