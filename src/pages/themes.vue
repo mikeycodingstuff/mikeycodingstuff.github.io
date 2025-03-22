@@ -16,9 +16,8 @@
           <ExternalLink to="https://monkeytype.com" name="monkeytype" />.
         </p>
       </div>
-      <div class="grid center p-6 bg-theme-bg-alt rounded-lg">
+      <div>
         <ThemeSwitcher />
-        <ThemeColorsDisplay class="p-4" />
       </div>
     </div>
   </div>
