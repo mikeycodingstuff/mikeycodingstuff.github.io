@@ -26,14 +26,7 @@ import { messages } from '@/typewriter'
       </template>
 
       <div>
-        <!--        TODO: implement command bar -->
-        <!--        <div class="p-2 hidden md:block"> -->
-        <!--          <p class="text-center md:text-sm lg:text-base xl:text-lg transition-colors duration-300"> -->
-        <!--            Press <span class="text-theme-accent-alt">`Esc`</span> to navigate via the command bar -->
-        <!--          </p> -->
-        <!--        </div> -->
-
-        <nav-bar />
+        <NavBar />
       </div>
     </HomeHero>
   </div>

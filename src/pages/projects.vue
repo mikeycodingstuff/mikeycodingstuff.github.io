@@ -25,7 +25,7 @@
     </div>
 
     <footer class="self-end">
-      <p class="mt-6 lg:text-2xl">
+      <p class="p-4 mt-6 lg:text-2xl">
         Check out my
         <ExternalLink to="https://github.com/mikeycodingstuff" name="GitHub" />
         to view my other work!
