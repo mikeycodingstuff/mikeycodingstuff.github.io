@@ -22,15 +22,6 @@
           maintenance branch that I can publish to set the site in maintenance mode.
         </p>
       </ProjectCard>
-      <ProjectCard
-        project-name="Placeholder"
-        github-link="https://github.com/mikeycodingstuff/best-pokemon"
-        alt="Dolor id cupidatat dolore pariatur est consequat"
-      >
-        <p>
-          Consequat ipsum tempor eu adipisicing consectetur. Quis laboris aute aliqua eiusmod dolor dolore fugiat incididunt. Occaecat qui adipisicing tempor occaecat sint nisi magna velit amet. Veniam cupidatat ullamco enim. Officia Lorem aliquip velit reprehenderit occaecat incididunt non occaecat deserunt veniam nostrud esse. Esse aute pariatur cupidatat sit proident nostrud. Nisi amet enim quis magna sint velit eu nostrud irure.
-        </p>
-      </ProjectCard>
     </div>
 
     <footer class="self-end">
