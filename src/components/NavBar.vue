@@ -14,7 +14,6 @@ watch(() => route.path, () => open.value = false)
 <template>
   <div class="flex md:justify-center items-center">
     <!-- Hamburger Menu Button -->
-    <!-- TODO: refactor to alpine? -->
     <button
       v-if="!isHomePage"
       class="p-2 focus:outline-hidden md:hidden"
