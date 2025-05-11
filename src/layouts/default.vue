@@ -10,6 +10,7 @@ const isHomePage = computed(() => useRoute().path === '/')
 
 <template>
   <div class="flex flex-col h-screen w-screen">
+    <CommandPalette />
     <NavBar v-if="!isHomePage" />
     <slot />
   </div>
